@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Epic Web Games | Play Free Online Games</title>
+    <title>Sprunki Unblocked: Fun DJ Music Game & Mysterious for Kids!</title>
+    <meta name="description" content="Become a DJ with Sprunki Unblocked! Mix awesome music, create your own beats, and customize quirky characters with fun accessories. Explore cheerful tunes that transform into mysterious soundscapes and spooky surprises as you unlock new phases. Play anytime, anywhere – no downloads needed, just pure browser-based fun!" />
+    <meta name="keywords" content="Sprunki Unblocked, music game, DJ game, game for kids, music creation, Incredibox, free game, online game, entertainment game, beatbox, mysterious game, fun game" />
+    <!-- Facebook Open Graph -->
+    <meta property="og:title" content="Sprunki Unblocked: Fun DJ Music Game & Mysterious for Kids!" />
+    <meta property="og:description" content="Become a DJ with Sprunki Unblocked! Mix awesome music, create your own beats, and customize quirky characters with fun accessories. Explore cheerful tunes that transform into mysterious soundscapes and spooky surprises as you unlock new phases. Play anytime, anywhere – no downloads needed, just pure browser-based fun!" />
+    <meta property="og:image" content="https://sprunkiunblocked.github.io/datas/images/Sprunki-Unblocked.jpg" />
+    <meta property="og:url" content="https://sprunkiunblocked.github.io/" />
+    <meta property="og:type" content="website" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sprunki Unblocked: Fun DJ Music Game & Mysterious for Kids!" />
+    <meta name="twitter:description" content="Become a DJ with Sprunki Unblocked! Mix awesome music, create your own beats, and customize quirky characters with fun accessories. Explore cheerful tunes that transform into mysterious soundscapes and spooky surprises as you unlock new phases. Play anytime, anywhere – no downloads needed, just pure browser-based fun!" />
+    <meta name="twitter:image" content="https://sprunkiunblocked.github.io/datas/images/Sprunki-Unblocked.jpg" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <script>
         tailwind.config = {
             theme: {
@@ -50,25 +64,15 @@
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <i class="fas fa-gamepad text-3xl text-primary"></i>
-                <h1 class="text-2xl font-bold text-gray-800">EpicWebGames</h1>
+                <h1 class="text-2xl font-bold text-gray-800">Geometry Game</h1>
             </div>
             
             <nav class="hidden md:flex space-x-8">
                 <a href="#" class="font-medium hover:text-primary transition">Home</a>
-                <a href="#" class="font-medium hover:text-primary transition">Categories</a>
                 <a href="#" class="font-medium hover:text-primary transition">New Games</a>
                 <a href="#" class="font-medium hover:text-primary transition">Top Games</a>
                 <a href="#" class="font-medium hover:text-primary transition">About</a>
             </nav>
-            
-            <div class="flex items-center space-x-4">
-                <button class="md:hidden">
-                    <i class="fas fa-bars text-xl"></i>
-                </button>
-                <button class="hidden md:block bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
-                    Sign In
-                </button>
-            </div>
         </div>
     </header>
 
@@ -78,24 +82,13 @@
         <section class="mb-8">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
                 <div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Space Adventure</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Sprunki Unblocked</h2>
                     <div class="flex items-center space-x-4 text-gray-600">
                         <span class="flex items-center">
-                            <i class="fas fa-star text-yellow-400 mr-1"></i> 4.8
+                            <i class="fas fa-star text-yellow-400 mr-1"></i> <span id="main-rating"></span>
                         </span>
-                        <span>5,432 plays</span>
-                        <span>Action</span>
+                        <span id="main-plays"></span>
                     </div>
-                </div>
-                <div class="mt-4 md:mt-0 flex space-x-3">
-                    <button class="flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg transition">
-                        <i class="fas fa-share-alt"></i>
-                        <span>Share</span>
-                    </button>
-                    <button class="flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg transition">
-                        <i class="fas fa-heart"></i>
-                        <span>Favorite</span>
-                    </button>
                 </div>
             </div>
         </section>
@@ -106,7 +99,7 @@
             <div class="lg:w-2/3">
                 <!-- Game Container -->
                 <div class="game-container bg-gray-100 rounded-xl overflow-hidden mb-6 shadow-md" id="game-area">
-                    <img src="https://geometrygame.org/wp-content/uploads/2023/05/geometry-dash-lite.jpg" alt="Space Adventure" class="w-full h-full object-cover" id="game-thumbnail">
+                    <img src="/datas/images/Sprunki-Unblocked.jpg" alt="Sprunki Unblocked" class="w-full h-full object-cover" id="game-thumbnail">
                     <button id="play-now-btn" class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-primary text-white px-6 py-3 rounded-lg text-xl font-bold shadow-lg hover:bg-blue-600 transition z-10">
                         <i class="fas fa-play mr-2"></i> Play Now
                     </button>
@@ -115,12 +108,14 @@
                 <!-- Game Controls -->
                 <div class="flex flex-wrap gap-3 mb-8">
                     <!-- Play Now button is now inside game-area -->
-                    <button class="flex-1 bg-gray-100 py-3 rounded-lg font-medium hover:bg-gray-200 transition" id="restart-btn">
-                        <i class="fas fa-redo mr-2"></i> Restart
-                    </button>
-                    <button class="flex-1 bg-gray-100 py-3 rounded-lg font-medium hover:bg-gray-200 transition">
-                        <i class="fas fa-cog mr-2"></i> Settings
-                    </button>
+                    <div class="flex-1 flex gap-2">
+                        <button class="bg-blue-100 py-3 rounded-lg font-medium hover:bg-blue-200 transition w-full" id="fb-share-btn" title="Share on Facebook">
+                            <i class="fab fa-facebook-f text-blue-600"></i>
+                        </button>
+                        <button class="bg-blue-100 py-3 rounded-lg font-medium hover:bg-blue-200 transition w-full" id="tw-share-btn" title="Share on Twitter">
+                            <i class="fab fa-twitter text-blue-400"></i>
+                        </button>
+                    </div>
                     <button class="flex-1 bg-gray-100 py-3 rounded-lg font-medium hover:bg-gray-200 transition" id="fullscreen-btn">
                         <i class="fas fa-expand mr-2"></i> Fullscreen
                     </button>
@@ -128,26 +123,32 @@
                 
                 <!-- Game Description -->
                 <section class="mb-8">
-                    <h3 class="text-2xl font-bold mb-4 text-gray-900">About Space Adventure</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">About Sprunki Unblocked</h3>
                     <div class="bg-gray-50 p-6 rounded-xl">
                         <p class="mb-4 text-gray-700">
-                            Embark on an epic journey through the cosmos in Space Adventure! Pilot your spaceship through asteroid fields, battle alien invaders, and explore mysterious planets in this action-packed browser game.
+                            Hey music makers! Have you ever wanted to be a **DJ** and create your very own cool songs? Well, now you can with **Sprunki Unblocked**! It's a super fun music game where you get to step into a DJ booth and mix all sorts of sounds – from **beats and melodies to vocals and even silly sound effects!**
                         </p>
                         <p class="mb-4 text-gray-700">
-                            With intuitive controls and stunning visuals, Space Adventure offers hours of entertainment for players of all ages. Collect power-ups, upgrade your ship, and compete for high scores on our global leaderboard.
+                            At first, everything is bright and cheerful, with happy tunes and funny pictures. But as you keep playing, get ready for a little **adventure!** The game gets a bit darker and more mysterious, with some **spooky sounds and surprising twists!** Don't worry, it's all part of the fun! Want to know how to unlock those darker, cooler themes? Try putting on the **black hat!** This will change the music and pictures into something totally unexpected. Just be ready for a few **"boo!" moments** – they're like little jump scares that add to the excitement!
+                        </p>
+                        <p class="mb-4 text-gray-700">
+                            You can play Sprunki Unblocked anytime, anywhere – whether you're at school, at home, or anywhere you have internet! **No downloads needed!** Just open your web browser and start creating.
                         </p>
                         <div class="grid grid-cols-2 gap-4 mt-4">
                             <div>
-                                <h4 class="font-semibold text-gray-800 mb-2">Features:</h4>
+                                <h4 class="font-semibold text-gray-800 mb-2">How to Play & Features:</h4>
                                 <ul class="space-y-2 text-gray-700">
                                     <li class="flex items-center">
-                                        <i class="fas fa-check-circle text-green-500 mr-2"></i> 50+ challenging levels
+                                        <i class="fas fa-music text-green-500 mr-2"></i> Mix beats, melodies, vocals & sound effects.
                                     </li>
                                     <li class="flex items-center">
-                                        <i class="fas fa-check-circle text-green-500 mr-2"></i> 10 unique spaceships
+                                        <i class="fas fa-tshirt text-green-500 mr-2"></i> Drag & drop outfits/accessories to characters.
                                     </li>
                                     <li class="flex items-center">
-                                        <i class="fas fa-check-circle text-green-500 mr-2"></i> Global leaderboards
+                                        <i class="fas fa-headphones text-green-500 mr-2"></i> Hover & click headphone button to isolate sounds.
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-hat-wizard text-green-500 mr-2"></i> Unlock darker themes with the black hat.
                                     </li>
                                 </ul>
                             </div>
@@ -155,15 +156,13 @@
                                 <h4 class="font-semibold text-gray-800 mb-2">Controls:</h4>
                                 <ul class="space-y-2 text-gray-700">
                                     <li class="flex items-center">
-                                        <i class="fas fa-arrow-up mr-2 text-blue-500"></i> Arrow keys to move
-                                    </li>
-                                    <li class="flex items-center">
-                                        <i class="fas fa-space-shuttle mr-2 text-blue-500"></i> Space to shoot
-                                    </li>
-                                    <li class="flex items-center">
-                                        <i class="fas fa-pause mr-2 text-blue-500"></i> P to pause
+                                        <i class="fas fa-hand-pointer mr-2 text-blue-500"></i> Drag and drop accessories to play.
                                     </li>
                                 </ul>
+                                <h4 class="font-semibold text-gray-800 mb-2 mt-4">About Sprunki's Origin:</h4>
+                                <p class="text-gray-700">
+                                    Sprunki builds on the foundation of Incredibox, a critically acclaimed music creation game. Sprunki started as a special mod and grew so popular it got its own game, adding a surreal and darker twist to the original upbeat tone.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -191,55 +190,7 @@
                 <!-- Similar Games -->
                 <section>
                     <h3 class="text-xl font-bold mb-4 text-gray-900">Similar Games</h3>
-                    <div class="space-y-4">
-                        <a href="#" class="game-card block bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 border border-gray-100">
-                            <div class="flex items-center space-x-4">
-                                <div class="w-16 h-16 bg-gray-200 rounded-lg overflow-hidden">
-                                    <img src="https://via.placeholder.com/64" alt="Galaxy Wars" class="w-full h-full object-cover">
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold">Galaxy Wars</h4>
-                                    <div class="flex items-center text-sm text-gray-500">
-                                        <i class="fas fa-star text-yellow-400 mr-1"></i> 4.6
-                                        <span class="mx-2">•</span>
-                                        <span>Action</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        
-                        <a href="#" class="game-card block bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 border border-gray-100">
-                            <div class="flex items-center space-x-4">
-                                <div class="w-16 h-16 bg-gray-200 rounded-lg overflow-hidden">
-                                    <img src="https://via.placeholder.com/64" alt="Cosmic Defender" class="w-full h-full object-cover">
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold">Cosmic Defender</h4>
-                                    <div class="flex items-center text-sm text-gray-500">
-                                        <i class="fas fa-star text-yellow-400 mr-1"></i> 4.4
-                                        <span class="mx-2">•</span>
-                                        <span>Shooter</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        
-                        <a href="#" class="game-card block bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 border border-gray-100">
-                            <div class="flex items-center space-x-4">
-                                <div class="w-16 h-16 bg-gray-200 rounded-lg overflow-hidden">
-                                    <img src="https://via.placeholder.com/64" alt="Star Voyager" class="w-full h-full object-cover">
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold">Star Voyager</h4>
-                                    <div class="flex items-center text-sm text-gray-500">
-                                        <i class="fas fa-star text-yellow-400 mr-1"></i> 4.7
-                                        <span class="mx-2">•</span>
-                                        <span>Adventure</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    <div id="similar-games-container" class="space-y-4"></div>
                 </section>
                 
                 <!-- Another Ad Space -->
@@ -251,47 +202,6 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- Top Players -->
-                <section>
-                    <h3 class="text-xl font-bold mb-4 text-gray-900">Top Players</h3>
-                    <div class="bg-gray-50 p-4 rounded-xl">
-                        <div class="space-y-3">
-                            <div class="flex items-center justify-between">
-                                <div class="flex items-center space-x-3">
-                                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
-                                        <span class="font-bold text-blue-600">1</span>
-                                    </div>
-                                    <span class="font-medium">SpaceMaster99</span>
-                                </div>
-                                <span class="font-bold text-primary">245,600</span>
-                            </div>
-                            
-                            <div class="flex items-center justify-between">
-                                <div class="flex items-center space-x-3">
-                                    <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center">
-                                        <span class="font-bold text-purple-600">2</span>
-                                    </div>
-                                    <span class="font-medium">GalacticHero</span>
-                                </div>
-                                <span class="font-bold text-primary">198,750</span>
-                            </div>
-                            
-                            <div class="flex items-center justify-between">
-                                <div class="flex items-center space-x-3">
-                                    <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
-                                        <span class="font-bold text-green-600">3</span>
-                                    </div>
-                                    <span class="font-medium">StarChaser</span>
-                                </div>
-                                <span class="font-bold text-primary">176,320</span>
-                            </div>
-                        </div>
-                        <button class="w-full mt-4 text-primary font-medium hover:underline">
-                            View Full Leaderboard
-                        </button>
-                    </div>
-                </section>
             </div>
         </div>
     </main>
@@ -374,66 +284,99 @@
     </footer>
 
     <script>
-        // Game data for the list
-        const games = [
-            {id: 1, name: "Geometry Dash Lite", category: "Arcade", rating: 4.7, plays: 12500, thumb: "https://geometrygame.org/wp-content/uploads/2023/05/geometry-dash-lite.jpg"},
-            {id: 2, name: "Galaxy Wars", category: "Action", rating: 4.6, plays: 9800, thumb: "https://via.placeholder.com/300x200?text=Galaxy+Wars"},
-            {id: 3, name: "Cosmic Defender", category: "Shooter", rating: 4.4, plays: 7500, thumb: "https://via.placeholder.com/300x200?text=Cosmic+Defender"},
-            {id: 4, name: "Star Voyager", category: "Adventure", rating: 4.7, plays: 11200, thumb: "https://via.placeholder.com/300x200?text=Star+Voyager"},
-            {id: 5, name: "Zombie Survival", category: "Action", rating: 4.5, plays: 8900, thumb: "https://via.placeholder.com/300x200?text=Zombie+Survival"},
-            {id: 6, name: "Puzzle Master", category: "Puzzle", rating: 4.8, plays: 15600, thumb: "https://via.placeholder.com/300x200?text=Puzzle+Master"},
-            {id: 7, name: "Car Racing Pro", category: "Racing", rating: 4.3, plays: 6800, thumb: "https://via.placeholder.com/300x200?text=Car+Racing+Pro"},
-            {id: 8, name: "Football Legends", category: "Sports", rating: 4.9, plays: 18300, thumb: "https://via.placeholder.com/300x200?text=Football+Legends"},
-            {id: 9, name: "Bubble Shooter", category: "Arcade", rating: 4.2, plays: 7200, thumb: "https://via.placeholder.com/300x200?text=Bubble+Shooter"},
-            {id: 10, name: "Minecraft Classic", category: "Adventure", rating: 4.8, plays: 21500, thumb: "https://via.placeholder.com/300x200?text=Minecraft+Classic"},
-            {id: 11, name: "Tank Battle", category: "Action", rating: 4.1, plays: 5400, thumb: "https://via.placeholder.com/300x200?text=Tank+Battle"},
-            {id: 12, name: "Chess Pro", category: "Strategy", rating: 4.7, plays: 9200, thumb: "https://via.placeholder.com/300x200?text=Chess+Pro"},
-            {id: 13, name: "Tetris Ultimate", category: "Puzzle", rating: 4.9, plays: 18700, thumb: "https://via.placeholder.com/300x200?text=Tetris+Ultimate"},
-            {id: 14, name: "Subway Surfers", category: "Arcade", rating: 4.8, plays: 24300, thumb: "https://via.placeholder.com/300x200?text=Subway+Surfers"},
-            {id: 15, name: "Angry Birds", category: "Arcade", rating: 4.6, plays: 15600, thumb: "https://via.placeholder.com/300x200?text=Angry+Birds"},
-            {id: 16, name: "Pac-Man", category: "Arcade", rating: 4.7, plays: 13200, thumb: "https://via.placeholder.com/300x200?text=Pac-Man"},
-            {id: 17, name: "Snake Game", category: "Arcade", rating: 4.3, plays: 7800, thumb: "https://via.placeholder.com/300x200?text=Snake+Game"},
-            {id: 18, name: "Flappy Bird", category: "Arcade", rating: 4.5, plays: 9500, thumb: "https://via.placeholder.com/300x200?text=Flappy+Bird"},
-            {id: 19, name: "2048 Puzzle", category: "Puzzle", rating: 4.4, plays: 8200, thumb: "https://via.placeholder.com/300x200?text=2048+Puzzle"},
-            {id: 20, name: "Solitaire", category: "Card", rating: 4.6, plays: 11500, thumb: "https://via.placeholder.com/300x200?text=Solitaire"},
-            {id: 21, name: "Mahjong", category: "Puzzle", rating: 4.3, plays: 6700, thumb: "https://via.placeholder.com/300x200?text=Mahjong"},
-            {id: 22, name: "Sudoku", category: "Puzzle", rating: 4.7, plays: 10800, thumb: "https://via.placeholder.com/300x200?text=Sudoku"},
-            {id: 23, name: "Crossword", category: "Puzzle", rating: 4.2, plays: 5900, thumb: "https://via.placeholder.com/300x200?text=Crossword"},
-            {id: 24, name: "Word Search", category: "Puzzle", rating: 4.1, plays: 5200, thumb: "https://via.placeholder.com/300x200?text=Word+Search"},
-            {id: 25, name: "Brick Breaker", category: "Arcade", rating: 4.4, plays: 7600, thumb: "https://via.placeholder.com/300x200?text=Brick+Breaker"},
-            {id: 26, name: "Space Invaders", category: "Arcade", rating: 4.5, plays: 8800, thumb: "https://via.placeholder.com/300x200?text=Space+Invaders"},
-            {id: 27, name: "Fruit Ninja", category: "Arcade", rating: 4.6, plays: 10200, thumb: "https://via.placeholder.com/300x200?text=Fruit+Ninja"},
-            {id: 28, name: "Doodle Jump", category: "Arcade", rating: 4.3, plays: 7100, thumb: "https://via.placeholder.com/300x200?text=Doodle+Jump"},
-            {id: 29, name: "Temple Run", category: "Arcade", rating: 4.7, plays: 12400, thumb: "https://via.placeholder.com/300x200?text=Temple+Run"},
-            {id: 30, name: "Candy Crush", category: "Puzzle", rating: 4.8, plays: 19600, thumb: "https://via.placeholder.com/300x200?text=Candy+Crush"}
-        ];
+        rating = (Math.random() * (5.0 - 4.5) + 4.5).toFixed(1);
+        plays = Math.floor(Math.random() * (20000 - 10000 + 1)) + 10000;
+        const ratingElement = document.getElementById('main-rating');
+        ratingElement.textContent = rating;
+        const playsElement = document.getElementById('main-plays');
+        playsElement.textContent = plays;
+
+        // Load game data from datas/all-game.json
+        let games = [];
+        let similarGames = [];
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+        function loadGames() {
+            fetch('datas/all-game.json')
+                .then(response => response.json())
+                .then(data => {
+                    // Lọc status = 1
+                    let filtered = data.filter(game => game.status === 1);
+                    // Sắp xếp theo order tăng dần
+                    filtered.sort((a, b) => (a.order || 0) - (b.order || 0));
+                    // Trộn ngẫu nhiên
+                    shuffleArray(filtered);
+                    // Lấy 30 game đầu tiên
+                    games = filtered.slice(0, 30);
+                    // Lấy 3 game category = 'Hot', status = 1
+                    let hotGames = data.filter(game => game.status === 1 && game.category === 'Hot');
+                    shuffleArray(hotGames);
+                    similarGames = hotGames.slice(0, 3);
+                    generateGameList();
+                    generateSimilarGames();
+                });
+        }
 
         // Generate game list items
         function generateGameList() {
             const container = document.getElementById('game-list-container');
             container.innerHTML = '';
-            
             games.forEach(game => {
+                game.rating = (Math.random() * (5.0 - 4.5) + 4.5).toFixed(1); // toFixed(1) rounds to one decimal place
+                game.plays = Math.floor(Math.random() * (20000 - 10000 + 1)) + 10000;
                 const gameItem = document.createElement('div');
                 gameItem.className = 'game-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 border border-gray-100';
                 gameItem.innerHTML = `
-                    <a href="#" class="block h-full flex flex-col">
+                    <a href="${game.slug + '.html' }" class="block h-full flex flex-col">
                         <div class="aspect-w-16 aspect-h-9 bg-gray-200 overflow-hidden">
-                            <img src="${game.thumb}" alt="${game.name}" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                            <img src="datas/images/${game.images || ''}" alt="${game.title}" class="w-full h-full object-cover hover:scale-105 transition duration-300">
                         </div>
                         <div class="p-4 flex-grow">
-                            <h4 class="font-bold text-gray-800 text-lg mb-1 line-clamp-2">${game.name}</h4>
+                            <h4 class="font-bold text-gray-800 text-lg mb-1 line-clamp-2">${game.title}</h4>
                             <div class="flex items-center justify-between mt-2">
                                 <div class="flex items-center text-sm text-gray-600">
-                                    <i class="fas fa-star text-yellow-400 mr-1"></i> ${game.rating}
+                                    <i class="fas fa-star text-yellow-400 mr-1"></i> ${game.rating || ''}
                                 </div>
-                                <span class="text-sm font-medium px-2 py-1 bg-gray-100 rounded-md text-gray-700">${game.category}</span>
+                                <span class="text-sm font-medium px-2 py-1 bg-gray-100 rounded-md text-gray-700">${game.category || ''}</span>
                             </div>
                             <div class="mt-2 text-xs text-gray-500">
-                                <i class="fas fa-play-circle mr-1"></i> ${game.plays.toLocaleString()} plays
+                                <i class="fas fa-play-circle mr-1"></i> ${(game.plays ? game.plays.toLocaleString() : '')} plays
                             </div>
                         </div>
                     </a>
+                `;
+                container.appendChild(gameItem);
+            });
+        }
+
+        // Generate similar games
+        function generateSimilarGames() {
+            const container = document.getElementById('similar-games-container');
+            if (!container) return;
+            container.innerHTML = '';
+            similarGames.forEach(game => {
+                game.rating = (Math.random() * (5.0 - 4.5) + 4.5).toFixed(1);
+                const gameItem = document.createElement('a');
+                gameItem.href = game.slug + '.html';
+                gameItem.className = 'game-card block bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 border border-gray-100';
+                gameItem.innerHTML = `
+                    <div class="flex items-center space-x-4">
+                        <div class="w-16 h-16 bg-gray-200 rounded-lg overflow-hidden">
+                            <img src="datas/images/${game.images || ''}" alt="${game.title}" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">${game.title}</h4>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i> ${game.rating}
+                                <span class="mx-2">•</span>
+                                <span>${game.category}</span>
+                            </div>
+                        </div>
+                    </div>
                 `;
                 container.appendChild(gameItem);
             });
@@ -461,15 +404,38 @@
 
         // Mobile menu toggle functionality
         document.addEventListener('DOMContentLoaded', function() {
-            // Generate game list
-            generateGameList();
+            // Load and generate game list
+            loadGames();
             // Setup Play Now button
             document.getElementById('play-now-btn').addEventListener('click', loadGame);
             // Setup fullscreen button
             document.getElementById('fullscreen-btn').addEventListener('click', toggleFullscreen);
             const mobileMenuButton = document.querySelector('.md\\:hidden');
             // You would add click handler here to show mobile menu
-            
+
+            // Share buttons functionality
+            const fbShareBtn = document.getElementById('fb-share-btn');
+            const twShareBtn = document.getElementById('tw-share-btn');
+            const shareUrl = window.location.href;
+            const shareTitle = document.title;
+            const shareDesc = document.querySelector('meta[name="description"]').getAttribute('content');
+            const shareImg = document.querySelector('meta[property="og:image"]').getAttribute('content');
+            console.log(`Share URL: ${shareUrl}`);
+            console.log(`shareDesc: ${shareDesc}`);
+            console.log(`shareImg: ${shareImg}`);
+            console.log(`shareTitle: ${shareTitle}`);
+
+            fbShareBtn.addEventListener('click', function() {
+                const quote = `${shareTitle} - ${shareDesc}\n${shareUrl}`;
+                const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}&quote=${encodeURIComponent(quote)}&hashtag=%23SprunkiUnblocked`;
+                window.open(url, '_blank', 'width=600,height=400');
+            });
+            twShareBtn.addEventListener('click', function() {
+                const tweetText = `${shareTitle} - ${shareDesc} ${shareUrl}`;
+                const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}&hashtags=SprunkiUnblocked&via=EpicWebGames`;
+                window.open(url, '_blank', 'width=600,height=400');
+            });
+
             // Game rating stars (example)
             const stars = document.querySelectorAll('.rating-star');
             stars.forEach((star, index) => {
@@ -485,7 +451,7 @@
                     });
                 });
             });
-            
+
             // Ad placeholder - in a real implementation you would load Google AdSense here
             console.log('Ad spaces ready for Google AdSense implementation');
         });

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Game | Play Free Online Geometry Dash</title>
+    <meta name="description" content="Play Geometry Game (Geometry Dash) online for free! Jump, dash, and sync with the rhythm in this challenging platformer. Read tips, controls, and discover secrets to master every level.">
+    <meta name="keywords" content="Geometry Dash, Geometry Game, play online, free game, rhythm platformer, tips, controls, browser game">
+    <link rel="canonical" href="https://games.crazygames.com/en_US/geometry-dash-online/index.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#10b981',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .game-container {
+            aspect-ratio: 16/9;
+            position: relative;
+        }
+        @media (max-width: 768px) {
+            .game-container {
+                aspect-ratio: 4/3;
+            }
+        }
+        .ad-container {
+            min-height: 250px;
+            background-color: #f3f4f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-white font-sans text-gray-800">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-gamepad text-3xl text-primary"></i>
+                <h1 class="text-2xl font-bold text-gray-800">Geometry Game</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="/" class="font-medium hover:text-primary transition">Home</a>
+                <a href="#" class="font-medium hover:text-primary transition">Categories</a>
+                <a href="#" class="font-medium hover:text-primary transition">New Games</a>
+                <a href="#" class="font-medium hover:text-primary transition">Top Games</a>
+                <a href="#" class="font-medium hover:text-primary transition">About</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <button class="hidden md:block bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+                    Sign In
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Game Title and Info -->
+        <section class="mb-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Geometry Game</h2>
+                    <div class="flex items-center space-x-4 text-gray-600">
+                        <span class="flex items-center">
+                            <i class="fas fa-star text-yellow-400 mr-1"></i> 4.8
+                        </span>
+                        <span>Hot, New</span>
+                        <span>Platformer</span>
+                    </div>
+                </div>
+                <div class="mt-4 md:mt-0 flex space-x-3">
+                    <button class="flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg transition">
+                        <i class="fas fa-share-alt"></i>
+                        <span>Share</span>
+                    </button>
+                    <button class="flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg transition">
+                        <i class="fas fa-heart"></i>
+                        <span>Favorite</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Game Area -->
+        <div class="game-container bg-gray-100 rounded-xl overflow-hidden mb-6 shadow-md" id="game-area">
+            <img src="/datas/images/Geometry-Game.png" alt="Geometry Game" class="w-full h-full object-cover" id="game-thumbnail">
+            <button id="play-now-btn" class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-primary text-white px-6 py-3 rounded-lg text-xl font-bold shadow-lg hover:bg-blue-600 transition z-10">
+                <i class="fas fa-play mr-2"></i> Play Now
+            </button>
+        </div>
+        <!-- Game Controls -->
+        <div class="flex flex-wrap gap-3 mb-8">
+            <button class="flex-1 bg-gray-100 py-3 rounded-lg font-medium hover:bg-gray-200 transition" id="restart-btn">
+                <i class="fas fa-redo mr-2"></i> Restart
+            </button>
+            <button class="flex-1 bg-gray-100 py-3 rounded-lg font-medium hover:bg-gray-200 transition">
+                <i class="fas fa-cog mr-2"></i> Settings
+            </button>
+            <button class="flex-1 bg-gray-100 py-3 rounded-lg font-medium hover:bg-gray-200 transition" id="fullscreen-btn">
+                <i class="fas fa-expand mr-2"></i> Fullscreen
+            </button>
+        </div>
+        <!-- Game Description -->
+        <section class="mb-8">
+            <h3 class="text-2xl font-bold mb-4 text-gray-900">About Geometry Game</h3>
+            <div class="bg-gray-50 p-6 rounded-xl">
+                <p class="mb-4 text-gray-700">
+                    Welcome to the geometric gauntlet! Geometry Dash, or Geometry Game as it's often called, isn't your average platformer – it's a rhythm-infused adventure that demands lightning-fast reflexes and unwavering focus. This guide will equip you with the knowledge to navigate the electrifying world of Geometry Dash, from its core mechanics to the vibrant online community, whether you're playing the free version, Geometry Dash Lite, or considering the full experience, Geometry Dash Full Version.
+                </p>
+                <h4 class="font-semibold text-gray-800 mb-2">Core Gameplay: Jump, Dash, Rhythm</h4>
+                <p class="mb-4 text-gray-700">
+                    At its heart, Geometry Dash offers a deceptively simple concept. You control a cube-shaped character, navigating treacherous levels in Geometry Dash World (the main game mode) by tapping the screen to make it jump and fly. But here's where the magic happens – the action seamlessly syncs with the energetic soundtrack. Every jump, boost, and gravity flip becomes an extension of the music, creating a captivating blend of challenge and rhythm.
+                </p>
+                <h4 class="font-semibold text-gray-800 mb-2">Mastering the Geometry Dash with Rhythm:</h4>
+                <ul class="space-y-2 text-gray-700">
+                    <li>Listen Close: The music becomes your guide, telegraphing upcoming obstacles and power-ups. Learn to anticipate jumps and maneuvers based on the shifts in the melody.</li>
+                    <li>Practice Makes Perfect: Don't be discouraged by initial frustration. Levels require repetition to master; the music will become ingrained in your memory, and your reflexes will sharpen with each attempt.</li>
+                </ul>
+                <h4 class="font-semibold text-gray-800 mb-2 mt-4">Understanding all the Geometry Dash Levels:</h4>
+                <ul class="space-y-2 text-gray-700">
+                    <li>Obstacles Galore: Prepare to dodge razor-sharp saws, navigate through gravity-defying portals, and avoid perilous spikes that litter the levels in both Geometry Dash Lite and the full version.</li>
+                    <li>Hidden Secrets: Keep an eye out for collectibles and hidden pathways that unlock new icons and game modes, like those found in expansions like Geometry Dash SubZero and Geometry Dash Meltdown.</li>
+                </ul>
+                <h4 class="font-semibold text-gray-800 mb-2 mt-4">Embracing the Challenge: The Cycle of Frustration and Triumph</h4>
+                <h4 class="font-semibold text-gray-800 mb-2 mt-4">Instructions</h4>
+                <ul class="space-y-2 text-gray-700">
+                    <li>JUMP: [Space], [W], [Up], [Ctr], or clicking the mouse</li>
+                    <li>PAUSE: [P] to pause the game</li>
+                    <li>LAG: [L] to toggle special effects</li>
+                    <li>RESTART: [Green Flag]</li>
+                    <li>Remember, avoid touching the spikes at all costs—otherwise, you'll have to restart your journey!</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-gray-50 border-t border-gray-200 mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-gamepad text-3xl text-primary"></i>
+                        <h3 class="text-xl font-bold">Geometry Game</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Play Geometry Game online for free. Jump, dash, and master the rhythm in this top-rated platformer. No downloads required!
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-primary transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-primary transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-primary transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-primary transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Categories</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition">Hot</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition">New</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition">Platformer</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition">Rhythm</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition">About Us</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition">Contact</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition">DMCA</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Newsletter</h4>
+                    <p class="text-gray-600 mb-4">
+                        Subscribe to get updates on new games and special offers.
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent w-full">
+                        <button type="submit" class="bg-primary text-white px-4 py-2 rounded-r-lg hover:bg-blue-600 transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 mb-4 md:mb-0">
+                    &copy; 2025 Geometry Game. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-primary transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-primary transition">Terms of Service</a>
+                    <a href="#" class="text-gray-500 hover:text-primary transition">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Fullscreen functionality
+        function toggleFullscreen() {
+            const iframe = document.getElementById('game-iframe');
+            if (iframe) {
+                if (!document.fullscreenElement) {
+                    iframe.requestFullscreen().catch(err => {
+                        alert(`Error attempting to enable fullscreen: ${err.message}`);
+                    });
+                } else {
+                    document.exitFullscreen();
+                }
+            }
+        }
+        // Play Now functionality
+        function loadGame() {
+            const gameArea = document.getElementById('game-area');
+            gameArea.innerHTML = `<iframe src=\"https://games.crazygames.com/en_US/geometry-dash-online/index.html\" class=\"w-full h-full\" frameborder=\"0\" allowfullscreen id=\"game-iframe\"></iframe>`;
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('play-now-btn').addEventListener('click', loadGame);
+            document.getElementById('fullscreen-btn').addEventListener('click', toggleFullscreen);
+        });
+    </script>
+</body>
+</html>

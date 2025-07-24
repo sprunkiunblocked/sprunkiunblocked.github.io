@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Games - Sprunki Unblocked</title>
+    <meta name="description" content="Play the hottest games on Sprunki Unblocked! Discover trending browser games with high ratings and lots of plays." />
+    <link rel="icon" type="image/png" href="datas/favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-white font-sans text-gray-800">
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-gamepad text-3xl text-primary"></i>
+                <h1 class="text-2xl font-bold text-gray-800">Sprunki Unblocked</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="font-medium hover:text-primary transition">Home</a>
+                <a href="hotgame.html" class="font-medium text-primary font-bold">Hot Games</a>
+                <a href="newgame.html" class="font-medium hover:text-primary transition">New Games</a>
+                <a href="about.html" class="font-medium hover:text-primary transition">About</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-12">
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-8 text-gray-900 border-b pb-4">Hot Games</h2>
+            <div id="hot-game-list" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6"></div>
+        </section>
+    </main>
+    <footer class="bg-gray-50 border-t border-gray-200 mt-12">
+        <div class="container mx-auto px-4 py-8 text-center text-gray-500">
+            &copy; 2025 SprunkiWebGames. All rights reserved.
+        </div>
+    </footer>
+    <script>
+        // Load and display hot games
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+        fetch('datas/all-game.json')
+            .then(response => response.json())
+            .then(data => {
+                // Filter games with category = 'hot' and status = 1
+                let hotGames = data.filter(game => game.status === 1 && game.category && game.category.toLowerCase() === 'hot');
+                // Sort by order if available
+                hotGames.sort((a, b) => (a.order || 0) - (b.order || 0));
+                // Shuffle for variety
+                shuffleArray(hotGames);
+                // Render games
+                const container = document.getElementById('hot-game-list');
+                container.innerHTML = '';
+                hotGames.forEach(game => {
+                    game.rating = (Math.random() * (5.0 - 4.5) + 4.5).toFixed(1);
+                    game.plays = Math.floor(Math.random() * (20000 - 10000 + 1)) + 10000;
+                    const gameItem = document.createElement('div');
+                    gameItem.className = 'game-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 border border-gray-100';
+                    gameItem.innerHTML = `
+                        <a href="${game.slug + '.html'}" class="block h-full flex flex-col">
+                            <div class="aspect-w-16 aspect-h-9 bg-gray-200 overflow-hidden">
+                                <img src="datas/images/${game.images || ''}" alt="${game.title}" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                            </div>
+                            <div class="p-4 flex-grow">
+                                <h4 class="font-bold text-gray-800 text-lg mb-1 line-clamp-2">${game.title}</h4>
+                                <div class="flex items-center justify-between mt-2">
+                                    <div class="flex items-center text-sm text-gray-600">
+                                        <i class="fas fa-star text-yellow-400 mr-1"></i> ${game.rating}
+                                    </div>
+                                    <span class="text-sm font-medium px-2 py-1 bg-gray-100 rounded-md text-gray-700">${game.category}</span>
+                                </div>
+                                <div class="mt-2 text-xs text-gray-500">
+                                    <i class="fas fa-play-circle mr-1"></i> ${game.plays.toLocaleString()} plays
+                                </div>
+                            </div>
+                        </a>
+                    `;
+                    container.appendChild(gameItem);
+                });
+            });
+    </script>
+</body>
+</html>

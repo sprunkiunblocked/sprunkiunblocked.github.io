@@ -1,7 +1,7 @@
 [
     {
-        "slug": "Sprunki Dandy's World",
-        "title": "Sprunki-World",
+        "slug": "Sprunki-World",
+        "title": "Sprunki Dandy's World",
         "images": "Sprunki-World.jpg",
         "url": "https://iframegame.com/embed/sprunki-world/index.html",
         "category": "Hot",
@@ -9,8 +9,8 @@
         "order": 1
     },
     {
-        "slug": "Sprunki Phase 5",
-        "title": "Sprunki-Phase-5",
+        "slug": "Sprunki-Phase-5",
+        "title": "Sprunki Phase 5",
         "images": "Sprunki-Phase-5.jpg",
         "url": "https://sprunki.org/sprunki-phase-5.embed",
         "category": "Hot",
@@ -18,8 +18,8 @@
         "order": 1
     },
     {
-        "slug": "Sprunki Definitive Phase 4 Reupload",
-        "title": "Sprunki-Definitive-Phase-4-Reupload",
+        "slug": "Sprunki-Definitive-Phase-4-Reupload",
+        "title": "Sprunki Definitive Phase 4 Reupload",
         "images": "Sprunki-Definitive-Phase-4-Reupload.jpg",
         "url": "https://iframegame.com/embed/sprunki-definitive-phase-4-reupload/index.html",
         "category": "Hot",
@@ -111,7 +111,7 @@
         "slug": "Stickman-Hook",
         "title": "Stickman Hook",
         "images": "Stickman-Hook.jpg",
-        "url": "https://stick-man-hook.github.io/file/",
+        "url": "https://stickmanhookgame.org/game/stickman-hook/",
         "category": "New",
         "status": 1,
         "order": 6
@@ -193,7 +193,7 @@
         "title": "Geometry Dash Breeze",
         "images": "Geometry-Dash-Breeze.jpg",
         "url": "https://geometrydashbreeze.com/",
-        "category": "Hot, New",
+        "category": "New",
         "status": 1,
         "order": 1
     },
@@ -202,7 +202,7 @@
         "title": "Geometry Dash World",
         "images": "Geometry-Dash-World.jpg",
         "url": "https://geometrydashworld.net/game/geometry-world/",
-        "category": "Hot, New",
+        "category": "New",
         "status": 1,
         "order": 1
     },
@@ -211,7 +211,7 @@
         "title": "Geometry Dash Impact X",
         "images": "Geometry-Dash-Impact-X.png",
         "url": "https://scratch.mit.edu/projects/296818811/embed",
-        "category": "Hot",
+        "category": "New",
         "status": 1,
         "order": 1
     },
@@ -220,7 +220,7 @@
         "title": "Geometry Dash Scratch",
         "images": "Geometry-Dash-Scratch.jpg",
         "url": "https://scratch.mit.edu/projects/105500895/embed",
-        "category": "Hot",
+        "category": "New",
         "status": 1,
         "order": 1
     },
@@ -229,7 +229,7 @@
         "title": "Geometry Dash Dark Drop",
         "images": "Geometry-Dash-Dark-Drop.png",
         "url": "https://scratch.mit.edu/projects/302115583/embed",
-        "category": "Hot",
+        "category": "New",
         "status": 1,
         "order": 1
     },
@@ -238,7 +238,7 @@
         "title": "Geometry Dash The Challenge",
         "images": "Geometry-Dash-The-Challenge.jpg",
         "url": "https://geometrydashlitepc.io/geometry-dash-the-challenge.embed",
-        "category": "Hot, New",
+        "category": "New",
         "status": 1,
         "order": 1
     }

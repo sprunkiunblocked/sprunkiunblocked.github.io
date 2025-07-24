@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometry Game - Play Online Rhythm Platformer</title>
-    <meta name="description" content="Play Geometry Game online! Jump, dash, and fly through rhythm-based levels. Master obstacles, unlock secrets, and challenge your reflexes in this iconic platformer." />
-    <meta name="keywords" content="Geometry Game, Geometry Dash, rhythm game, platformer, online game, free game, reflex, music, obstacles, jump, dash" />
+    <title>Monkey Mart: Manage, Grow & Customize Your Supermarket!</title>
+    <meta name="description" content="Monkey Mart is a fun idle/management game! Run your own supermarket, plant and harvest produce, fill stands, serve customers, unlock new aisles, hire assistants, and upgrade your market. Discover new products, customize your monkey, and grow your business!" />
+    <meta name="keywords" content="Monkey Mart, supermarket game, idle game, management game, monkey game, produce, upgrade, assistant, chocolate, coffee, hat, customization, free online game, browser game" />
     <!-- Facebook Open Graph -->
-    <meta property="og:title" content="Geometry Game - Play Online Rhythm Platformer" />
-    <meta property="og:description" content="Jump, dash, and fly through rhythm-based levels in Geometry Game. Master obstacles, unlock secrets, and challenge your reflexes!" />
-    <meta property="og:image" content="https://sprunkiunblocked.github.io/datas/images/Geometry-Game.png" />
-    <meta property="og:url" content="https://sprunkiunblocked.github.io/Geometry-Game.html" />
+    <meta property="og:title" content="Monkey Mart: Manage, Grow & Customize Your Supermarket!" />
+    <meta property="og:description" content="Monkey Mart is a fun idle/management game! Run your own supermarket, plant and harvest produce, fill stands, serve customers, unlock new aisles, hire assistants, and upgrade your market. Discover new products, customize your monkey, and grow your business!" />
+    <meta property="og:image" content="https://sprunkiunblocked.github.io/datas/images/Monkey-Mart.jpg" />
+    <meta property="og:url" content="https://ubggo.github.io/ub-games/monkeymart/" />
     <meta property="og:type" content="website" />
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Geometry Game - Play Online Rhythm Platformer" />
-    <meta name="twitter:description" content="Jump, dash, and fly through rhythm-based levels in Geometry Game. Master obstacles, unlock secrets, and challenge your reflexes!" />
-    <meta name="twitter:image" content="https://sprunkiunblocked.github.io/datas/images/Geometry-Game.png" />
+    <meta name="twitter:title" content="Monkey Mart: Manage, Grow & Customize Your Supermarket!" />
+    <meta name="twitter:description" content="Monkey Mart is a fun idle/management game! Run your own supermarket, plant and harvest produce, fill stands, serve customers, unlock new aisles, hire assistants, and upgrade your market. Discover new products, customize your monkey, and grow your business!" />
+    <meta name="twitter:image" content="https://sprunkiunblocked.github.io/datas/images/Monkey-Mart.jpg" />
     <link rel="icon" type="image/png" href="datas/favicon.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -64,8 +64,8 @@
     <header class="sticky top-0 z-50 bg-white shadow-sm">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
-                <i class="fas fa-gamepad text-3xl text-primary"></i>
-                <h1 class="text-2xl font-bold text-gray-800">Geometry Game</h1>
+                <i class="fas fa-store text-3xl text-primary"></i>
+                <h1 class="text-2xl font-bold text-gray-800">Monkey Mart</h1>
             </div>
             
             <nav class="hidden md:flex space-x-8">
@@ -83,7 +83,7 @@
         <section class="mb-8">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
                 <div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Geometry Game</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Monkey Mart</h2>
                     <div class="flex items-center space-x-4 text-gray-600">
                         <span class="flex items-center">
                             <i class="fas fa-star text-yellow-400 mr-1"></i> <span id="main-rating"></span>
@@ -100,10 +100,12 @@
             <div class="lg:w-2/3">
                 <!-- Game Container -->
                 <div class="game-container bg-gray-100 rounded-xl overflow-hidden mb-6 shadow-md" id="game-area">
-                    <img src="datas/images/Geometry-Game.png" alt="Geometry Game" class="w-full h-full object-cover" id="game-thumbnail">
-                    <button id="play-now-btn" class="absolute left-1/4 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-500 to-green-400 text-white px-10 py-6 rounded-2xl text-3xl font-extrabold shadow-2xl border-4 border-white hover:scale-105 hover:from-blue-600 hover:to-green-500 transition-all duration-300 z-20 flex items-center gap-3 animate-bounce">
-                        <i class="fas fa-play mr-2 text-4xl"></i> Play Geometry Game
-                    </button>
+                    <div class="relative w-full h-full flex items-center justify-center">
+                        <img src="/datas/images/Monkey-Mart.jpg" alt="Monkey Mart" class="w-full h-full object-cover" id="game-thumbnail">
+                        <button id="play-now-btn" class="absolute left-1/4 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-500 to-green-400 text-white px-10 py-6 rounded-2xl text-3xl font-extrabold shadow-2xl border-4 border-white hover:scale-105 hover:from-blue-600 hover:to-green-500 transition-all duration-300 z-20 flex items-center gap-3 animate-bounce">
+                            <i class="fas fa-play mr-2 text-4xl"></i> Play Now
+                        </button>
+                    </div>
                 </div>
                 
                 <!-- Game Controls -->
@@ -125,43 +127,36 @@
                 <!-- Game Description -->
                 <section class="mb-8">
                     <h3 class="text-3xl font-extrabold mb-6 text-primary flex items-center gap-3 animate-pulse">
-                        <i class="fas fa-cube text-2xl text-blue-500"></i>
-                        About Geometry Game
-                        <span class="bg-gradient-to-r from-yellow-400 to-pink-400 text-white px-3 py-1 rounded-full text-base font-bold ml-2 animate-bounce">#Rhythm #Challenge</span>
+                        <i class="fas fa-store text-2xl text-green-500"></i>
+                        About Monkey Mart
+                        <span class="bg-gradient-to-r from-yellow-400 to-green-400 text-white px-3 py-1 rounded-full text-base font-bold ml-2 animate-bounce">#Idle #Management</span>
                     </h3>
-                    <div class="bg-gradient-to-br from-blue-50 via-pink-50 to-yellow-50 p-8 rounded-2xl shadow-lg border border-primary/20">
+                    <div class="bg-gradient-to-br from-yellow-50 via-green-50 to-blue-50 p-8 rounded-2xl shadow-lg border border-primary/20">
                         <div class="flex flex-col md:flex-row gap-8 items-center">
                             <div class="flex-1">
-                                <p class="mb-4 text-lg text-gray-800 font-semibold">
-                                    <span class="inline-block bg-blue-200 text-blue-900 px-2 py-1 rounded mr-2 font-bold animate-bounce">Welcome!</span>
-                                    <span class="text-primary font-bold">Geometry Game</span> is a <span class="text-pink-600 font-bold">rhythm-infused platformer</span> that tests your reflexes and focus. Jump, dash, and fly through electrifying levels, all synced to energetic soundtracks. Every move is an extension of the music—<span class="font-bold text-yellow-600">can you keep up?</span>
-                                </p>
-                                <div class="bg-white rounded-xl shadow p-4 mb-4">
-                                    <h4 class="font-bold text-lg text-primary mb-2 flex items-center gap-2"><i class="fas fa-bolt text-yellow-500"></i> Core Gameplay</h4>
-                                    <ul class="space-y-2 text-gray-700">
-                                        <li class="flex items-center"><i class="fas fa-cube text-blue-500 mr-2"></i> Control a cube-shaped character and navigate treacherous levels by jumping and flying.</li>
-                                        <li class="flex items-center"><i class="fas fa-music text-pink-500 mr-2"></i> Sync your actions with the music to anticipate obstacles and power-ups.</li>
-                                        <li class="flex items-center"><i class="fas fa-exclamation-triangle text-red-500 mr-2"></i> Dodge saws, spikes, and gravity portals while collecting secrets and unlocking new icons.</li>
-                                    </ul>
-                                </div>
-                                <div class="bg-white rounded-xl shadow p-4 mb-4">
-                                    <h4 class="font-bold text-lg text-primary mb-2 flex items-center gap-2"><i class="fas fa-lightbulb text-yellow-400"></i> Tips for Mastering</h4>
-                                    <ul class="space-y-2 text-gray-700">
-                                        <li class="flex items-center"><i class="fas fa-headphones text-green-500 mr-2"></i> Listen closely to the soundtrack for cues.</li>
-                                        <li class="flex items-center"><i class="fas fa-sync-alt text-purple-500 mr-2"></i> Practice levels to sharpen your reflexes and memorize patterns.</li>
-                                        <li class="flex items-center"><i class="fas fa-gem text-pink-500 mr-2"></i> Explore hidden paths and collectibles for extra rewards.</li>
-                                    </ul>
-                                </div>
-                                <div class="bg-white rounded-xl shadow p-4">
-                                    <h4 class="font-bold text-lg text-primary mb-2 flex items-center gap-2"><i class="fas fa-gamepad text-blue-500"></i> Controls</h4>
-                                    <ul class="space-y-2 text-gray-700">
-                                        <li class="flex items-center"><i class="fas fa-arrow-up text-blue-500 mr-2"></i> <strong>JUMP:</strong> [Space], [W], [Up], [Ctrl], or mouse click</li>
-                                        <li class="flex items-center"><i class="fas fa-pause text-gray-500 mr-2"></i> <strong>PAUSE:</strong> [P] to pause</li>
-                                        <li class="flex items-center"><i class="fas fa-bolt text-yellow-500 mr-2"></i> <strong>LAG:</strong> [L] to toggle effects</li>
-                                        <li class="flex items-center"><i class="fas fa-flag text-green-500 mr-2"></i> <strong>RESTART:</strong> [Green Flag]</li>
-                                    </ul>
-                                </div>
-                                <p class="mt-4 text-base text-red-600 font-bold animate-pulse">Avoid touching spikes or obstacles—otherwise, you'll have to restart your journey!</p>
+                                <h2 class="text-2xl font-bold mb-4 text-primary">Monkey Mart Overview</h2>
+                                <h3 class="font-bold text-lg mb-2 text-green-700">Game Concept</h3>
+                                <p class="mb-4 text-base text-gray-800">Monkey Mart is an idle/management game where you control a cute monkey character in charge of a supermarket. Plant fruits, harvest produce, and move around to fill the stands with various food items like bananas, corn, eggs, peanuts, coffee beans, chocolate, and wheat. Customers will pick up items and wait at the cashier desk for you to collect your money. As you unlock new aisles and grow your market, you can hire assistants and buy appliances to prepare advanced products like chocolate bars, coffee, yogurt, popcorn, and ice cream. Upgrade your character’s managing skills and wear cool hats while managing your market!</p>
+                                <h3 class="font-bold text-lg mb-2 text-green-700">How to Play Monkey Mart</h3>
+                                <p class="mb-2 text-base text-gray-800">Run around the market to grab fresh crops and stand next to the aisles to stack them up for customers. Your character will automatically do the work as long as you're in the right place!</p>
+                                <ul class="mb-4 list-disc list-inside text-gray-700">
+                                    <li><strong>Move:</strong> Use WASD or Arrow keys</li>
+                                </ul>
+                                <h3 class="font-bold text-lg mb-2 text-green-700">Latest Mart Update</h3>
+                                <p class="mb-4 text-base text-gray-800">Monkey Mart has been updated with the third mart, allowing you to produce and sell chocolate muffins, cookies, and ice cream! 🎉</p>
+                                <h3 class="font-bold text-lg mb-2 text-green-700">Unlocking a New Mart</h3>
+                                <p class="mb-4 text-base text-gray-800">Pay attention to the spots the camera focuses on; you must save enough money to build an aisle there. Ensure you've unlocked all mandatory stalls to open your next branch.</p>
+                                <h3 class="font-bold text-lg mb-2 text-green-700">Switching Between Marts</h3>
+                                <p class="mb-4 text-base text-gray-800">Tap the truck icon at the top of your screen to select and move between your branches. Alternatively, walk outside the shop and stand next to your truck.</p>
+                                <h3 class="font-bold text-lg mb-2 text-green-700">Character Customization</h3>
+                                <p class="mb-4 text-base text-gray-800">Tap the hat icon at the top of your screen to browse the shop and check out the cool hats you can wear.</p>
+                                <h3 class="font-bold text-lg mb-2 text-green-700">Earning More Money</h3>
+                                <p class="mb-2 text-base text-gray-800">Upgrading your mart is the best way to earn more money and unlock new things faster. Tap the icon with an arrow at the top of your screen to access the Upgrades menu, where you can improve:</p>
+                                <ul class="mb-4 list-disc list-inside text-gray-700">
+                                    <li><strong>Player:</strong> Helps carry more items at once for effective stacking.</li>
+                                    <li><strong>Assistants, Farmers, Animals, and Chef:</strong> Increases their productivity, speed, and energy.</li>
+                                    <li><strong>Appliances:</strong> Boosts the production capacity and durability of machines.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -211,8 +206,8 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
-                        <i class="fas fa-gamepad text-3xl text-primary"></i>
-                        <h3 class="text-xl font-bold">Sprunki Unblocked</h3>
+                        <i class="fas fa-store text-3xl text-primary"></i>
+                        <h3 class="text-xl font-bold">Monkey Mart</h3>
                     </div>
                     <p class="text-gray-600 mb-4">
                         The best free online games you can play directly in your browser. No downloads required!
@@ -387,7 +382,7 @@
         // Play Now functionality
         function loadGame() {
             const gameArea = document.getElementById('game-area');
-            gameArea.innerHTML = `<iframe src="https://games.crazygames.com/en_US/geometry-dash-online/index.html" class="w-full h-full" frameborder="0" allowfullscreen id="game-iframe"></iframe>`;
+            gameArea.innerHTML = `<iframe src="https://ubggo.github.io/ub-games/monkeymart/" class="w-full h-full" frameborder="0" allowfullscreen id="game-iframe"></iframe>`;
         }
 
         // Mobile menu toggle functionality
@@ -407,7 +402,7 @@
             const shareUrl = window.location.href;
             const shareTitle = document.title;
             const shareDesc = document.querySelector('meta[name="description"]').getAttribute('content');
-            const shareImg = document.querySelector('meta[property="og:image"]').getAttribute('content');
+            const shareImg = document.querySelector('meta[property="og:image"]').getAttribute('content');;
 
             fbShareBtn.addEventListener('click', function() {
                 const quote = `${shareTitle} - ${shareDesc}\n${shareUrl}`;

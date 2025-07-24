@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometry Game - Play Online Rhythm Platformer</title>
-    <meta name="description" content="Play Geometry Game online! Jump, dash, and fly through rhythm-based levels. Master obstacles, unlock secrets, and challenge your reflexes in this iconic platformer." />
-    <meta name="keywords" content="Geometry Game, Geometry Dash, rhythm game, platformer, online game, free game, reflex, music, obstacles, jump, dash" />
+    <title>Geometry Dash Impact X - Play Online, Tips & Custom Levels | Sprunki Unblocked</title>
+    <meta name="description" content="Play Geometry Dash Impact X online! Experience thrilling rhythm-based platforming, custom levels, and advanced gameplay tips. Jump, fly, and master new obstacles. No download needed!" />
+    <meta name="keywords" content="Geometry Dash Impact X, play online, rhythm game, platformer, RobTop, custom levels, tips, browser game, jump, fly, orbs, stars, community" />
     <!-- Facebook Open Graph -->
-    <meta property="og:title" content="Geometry Game - Play Online Rhythm Platformer" />
-    <meta property="og:description" content="Jump, dash, and fly through rhythm-based levels in Geometry Game. Master obstacles, unlock secrets, and challenge your reflexes!" />
-    <meta property="og:image" content="https://sprunkiunblocked.github.io/datas/images/Geometry-Game.png" />
-    <meta property="og:url" content="https://sprunkiunblocked.github.io/Geometry-Game.html" />
+    <meta property="og:title" content="Geometry Dash Impact X - Play Online, Tips & Custom Levels" />
+    <meta property="og:description" content="Play Geometry Dash Impact X online! Experience thrilling rhythm-based platforming, custom levels, and advanced gameplay tips. Jump, fly, and master new obstacles." />
+    <meta property="og:image" content="https://sprunkiunblocked.github.io/datas/images/Geometry-Dash-Impact-X.png" />
+    <meta property="og:url" content="https://sprunkiunblocked.github.io/Geometry-Dash-Impact-X.html" />
     <meta property="og:type" content="website" />
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Geometry Game - Play Online Rhythm Platformer" />
-    <meta name="twitter:description" content="Jump, dash, and fly through rhythm-based levels in Geometry Game. Master obstacles, unlock secrets, and challenge your reflexes!" />
-    <meta name="twitter:image" content="https://sprunkiunblocked.github.io/datas/images/Geometry-Game.png" />
+    <meta name="twitter:title" content="Geometry Dash Impact X - Play Online, Tips & Custom Levels" />
+    <meta name="twitter:description" content="Play Geometry Dash Impact X online! Experience thrilling rhythm-based platforming, custom levels, and advanced gameplay tips. Jump, fly, and master new obstacles." />
+    <meta name="twitter:image" content="https://sprunkiunblocked.github.io/datas/images/Geometry-Dash-Impact-X.png" />
     <link rel="icon" type="image/png" href="datas/favicon.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -65,7 +65,7 @@
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <i class="fas fa-gamepad text-3xl text-primary"></i>
-                <h1 class="text-2xl font-bold text-gray-800">Geometry Game</h1>
+                <h1 class="text-2xl font-bold text-gray-800">Sprunki Unblocked</h1>
             </div>
             
             <nav class="hidden md:flex space-x-8">
@@ -83,7 +83,7 @@
         <section class="mb-8">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
                 <div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Geometry Game</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Geometry Dash Impact X</h2>
                     <div class="flex items-center space-x-4 text-gray-600">
                         <span class="flex items-center">
                             <i class="fas fa-star text-yellow-400 mr-1"></i> <span id="main-rating"></span>
@@ -100,10 +100,12 @@
             <div class="lg:w-2/3">
                 <!-- Game Container -->
                 <div class="game-container bg-gray-100 rounded-xl overflow-hidden mb-6 shadow-md" id="game-area">
-                    <img src="datas/images/Geometry-Game.png" alt="Geometry Game" class="w-full h-full object-cover" id="game-thumbnail">
-                    <button id="play-now-btn" class="absolute left-1/4 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-500 to-green-400 text-white px-10 py-6 rounded-2xl text-3xl font-extrabold shadow-2xl border-4 border-white hover:scale-105 hover:from-blue-600 hover:to-green-500 transition-all duration-300 z-20 flex items-center gap-3 animate-bounce">
-                        <i class="fas fa-play mr-2 text-4xl"></i> Play Geometry Game
-                    </button>
+                    <div class="relative w-full h-full flex items-center justify-center">
+                        <img src="/datas/images/Geometry-Dash-Impact-X.png" alt="Geometry Dash Impact X" class="w-full h-full object-cover" id="game-thumbnail">
+                        <button id="play-now-btn" class="absolute left-1/4 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-500 to-green-400 text-white px-10 py-6 rounded-2xl text-3xl font-extrabold shadow-2xl border-4 border-white hover:scale-105 hover:from-blue-600 hover:to-green-500 transition-all duration-300 z-20 flex items-center gap-3 animate-bounce">
+                            <i class="fas fa-play mr-2 text-4xl"></i> Play Now
+                        </button>
+                    </div>
                 </div>
                 
                 <!-- Game Controls -->
@@ -125,43 +127,56 @@
                 <!-- Game Description -->
                 <section class="mb-8">
                     <h3 class="text-3xl font-extrabold mb-6 text-primary flex items-center gap-3 animate-pulse">
-                        <i class="fas fa-cube text-2xl text-blue-500"></i>
-                        About Geometry Game
-                        <span class="bg-gradient-to-r from-yellow-400 to-pink-400 text-white px-3 py-1 rounded-full text-base font-bold ml-2 animate-bounce">#Rhythm #Challenge</span>
+                        <i class="fas fa-bolt text-2xl text-yellow-500"></i>
+                        About Geometry Dash Impact X
+                        <span class="bg-gradient-to-r from-yellow-400 to-blue-400 text-white px-3 py-1 rounded-full text-base font-bold ml-2 animate-bounce">#Platformer #Rhythm</span>
                     </h3>
-                    <div class="bg-gradient-to-br from-blue-50 via-pink-50 to-yellow-50 p-8 rounded-2xl shadow-lg border border-primary/20">
+                    <div class="bg-gradient-to-br from-blue-50 via-yellow-50 to-green-50 p-8 rounded-2xl shadow-lg border border-primary/20">
                         <div class="flex flex-col md:flex-row gap-8 items-center">
                             <div class="flex-1">
-                                <p class="mb-4 text-lg text-gray-800 font-semibold">
-                                    <span class="inline-block bg-blue-200 text-blue-900 px-2 py-1 rounded mr-2 font-bold animate-bounce">Welcome!</span>
-                                    <span class="text-primary font-bold">Geometry Game</span> is a <span class="text-pink-600 font-bold">rhythm-infused platformer</span> that tests your reflexes and focus. Jump, dash, and fly through electrifying levels, all synced to energetic soundtracks. Every move is an extension of the music—<span class="font-bold text-yellow-600">can you keep up?</span>
-                                </p>
-                                <div class="bg-white rounded-xl shadow p-4 mb-4">
-                                    <h4 class="font-bold text-lg text-primary mb-2 flex items-center gap-2"><i class="fas fa-bolt text-yellow-500"></i> Core Gameplay</h4>
-                                    <ul class="space-y-2 text-gray-700">
-                                        <li class="flex items-center"><i class="fas fa-cube text-blue-500 mr-2"></i> Control a cube-shaped character and navigate treacherous levels by jumping and flying.</li>
-                                        <li class="flex items-center"><i class="fas fa-music text-pink-500 mr-2"></i> Sync your actions with the music to anticipate obstacles and power-ups.</li>
-                                        <li class="flex items-center"><i class="fas fa-exclamation-triangle text-red-500 mr-2"></i> Dodge saws, spikes, and gravity portals while collecting secrets and unlocking new icons.</li>
+                                <header>
+                                    <h1 class="text-2xl font-bold mb-2">Geometry Dash Impact X - A Thrilling Rhythm-Based Platformer</h1>
+                                </header>
+                                <section class="mb-4">
+                                    <h2 class="font-bold text-lg mb-1">About Geometry Dash Impact X</h2>
+                                    <p class="mb-2 text-base text-gray-700"><strong>Geometry Dash Impact X</strong> is a challenging rhythm-based platformer that has captivated gamers worldwide. Developed by RobTop Games, this installment introduces exciting new levels, obstacles, and features while retaining the core mechanics that fans of the series love.</p>
+                                </section>
+                                <section class="mb-4">
+                                    <h3 class="font-bold text-lg mb-1">Gameplay Guidelines</h3>
+                                    <p class="mb-2 text-base text-gray-700">Playing <strong>Geometry Dash Impact X</strong> requires quick reflexes, precision, and a sense of rhythm. Here are some essential tips to help you master the game:</p>
+                                    <h4 class="font-bold text-base mb-1">Basic Controls</h4>
+                                    <ul class="list-disc ml-6 text-base text-gray-700">
+                                        <li><strong>Tap to Jump:</strong> Tap the screen or click the mouse to make your icon jump. Accurate timing is crucial for avoiding obstacles.</li>
+                                        <li><strong>Hold to Fly:</strong> In certain levels, your icon may transform into a flying vehicle. Hold the screen or mouse to control its altitude and avoid obstacles.</li>
                                     </ul>
-                                </div>
-                                <div class="bg-white rounded-xl shadow p-4 mb-4">
-                                    <h4 class="font-bold text-lg text-primary mb-2 flex items-center gap-2"><i class="fas fa-lightbulb text-yellow-400"></i> Tips for Mastering</h4>
+                                    <h4 class="font-bold text-base mt-3 mb-1">Level Navigation</h4>
+                                    <ul class="list-disc ml-6 text-base text-gray-700">
+                                        <li><strong>Practice Mode:</strong> Use practice mode to familiarize yourself with new levels. Place checkpoints to respawn from specific points instead of starting from the beginning.</li>
+                                        <li><strong>Memorize Patterns:</strong> Pay attention to the patterns of obstacles and hazards. Repeated practice is key to improving your performance.</li>
+                                        <li><strong>Timing is Everything:</strong> Synchronize your movements with the music’s rhythm to succeed in each level.</li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="flex-1 flex flex-col gap-4">
+                                <div class="bg-white rounded-xl shadow p-4">
+                                    <h4 class="font-bold text-lg text-primary mb-2 flex items-center gap-2"><i class="fas fa-lightbulb text-yellow-500"></i> Advanced Tips</h4>
                                     <ul class="space-y-2 text-gray-700">
-                                        <li class="flex items-center"><i class="fas fa-headphones text-green-500 mr-2"></i> Listen closely to the soundtrack for cues.</li>
-                                        <li class="flex items-center"><i class="fas fa-sync-alt text-purple-500 mr-2"></i> Practice levels to sharpen your reflexes and memorize patterns.</li>
-                                        <li class="flex items-center"><i class="fas fa-gem text-pink-500 mr-2"></i> Explore hidden paths and collectibles for extra rewards.</li>
+                                        <li><strong>Custom Levels:</strong> Use the level editor to create and share your own levels. Explore user-generated content for new challenges.</li>
+                                        <li><strong>Collect Orbs and Stars:</strong> Collecting orbs and stars in hard-to-reach areas unlocks new icons and customization options.</li>
+                                        <li><strong>Use Boosts Wisely:</strong> Speed boosts and portals change your icon’s behavior. Learn to navigate these elements for smoother gameplay.</li>
                                     </ul>
                                 </div>
                                 <div class="bg-white rounded-xl shadow p-4">
-                                    <h4 class="font-bold text-lg text-primary mb-2 flex items-center gap-2"><i class="fas fa-gamepad text-blue-500"></i> Controls</h4>
+                                    <h4 class="font-bold text-lg text-primary mb-2 flex items-center gap-2"><i class="fas fa-gamepad text-blue-500"></i> Customization & Community</h4>
                                     <ul class="space-y-2 text-gray-700">
-                                        <li class="flex items-center"><i class="fas fa-arrow-up text-blue-500 mr-2"></i> <strong>JUMP:</strong> [Space], [W], [Up], [Ctrl], or mouse click</li>
-                                        <li class="flex items-center"><i class="fas fa-pause text-gray-500 mr-2"></i> <strong>PAUSE:</strong> [P] to pause</li>
-                                        <li class="flex items-center"><i class="fas fa-bolt text-yellow-500 mr-2"></i> <strong>LAG:</strong> [L] to toggle effects</li>
-                                        <li class="flex items-center"><i class="fas fa-flag text-green-500 mr-2"></i> <strong>RESTART:</strong> [Green Flag]</li>
+                                        <li><strong>Customize Your Icon:</strong> Unlock new shapes and colors by completing levels and collecting rewards. Personalize your icon for a unique gameplay experience.</li>
+                                        <li><strong>Engage with the Community:</strong> Join the vibrant Geometry Dash Impact X community. Share your custom levels, learn strategies, and connect with fellow players.</li>
                                     </ul>
                                 </div>
-                                <p class="mt-4 text-base text-red-600 font-bold animate-pulse">Avoid touching spikes or obstacles—otherwise, you'll have to restart your journey!</p>
+                                <div class="bg-white rounded-xl shadow p-4">
+                                    <h4 class="font-bold text-lg text-primary mb-2 flex items-center gap-2"><i class="fas fa-info-circle text-purple-500"></i> Conclusion</h4>
+                                    <p class="text-gray-700">Geometry Dash Impact X is a thrilling platformer that tests your reflexes, patience, and rhythm. By mastering the controls, practicing regularly, and engaging with the community, you’ll be ready to tackle the most challenging levels. Dive into the game today and see how far your skills can take you!</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -387,7 +402,7 @@
         // Play Now functionality
         function loadGame() {
             const gameArea = document.getElementById('game-area');
-            gameArea.innerHTML = `<iframe src="https://games.crazygames.com/en_US/geometry-dash-online/index.html" class="w-full h-full" frameborder="0" allowfullscreen id="game-iframe"></iframe>`;
+            gameArea.innerHTML = `<iframe src="https://scratch.mit.edu/projects/296818811/embed" class="w-full h-full" frameborder="0" allowfullscreen id="game-iframe"></iframe>`;
         }
 
         // Mobile menu toggle functionality

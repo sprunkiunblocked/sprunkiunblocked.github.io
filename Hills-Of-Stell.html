@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometry Game - Play Online Rhythm Platformer</title>
-    <meta name="description" content="Play Geometry Game online! Jump, dash, and fly through rhythm-based levels. Master obstacles, unlock secrets, and challenge your reflexes in this iconic platformer." />
-    <meta name="keywords" content="Geometry Game, Geometry Dash, rhythm game, platformer, online game, free game, reflex, music, obstacles, jump, dash" />
+    <title>Hills of Steel: Tank Battle & Action Shooter!</title>
+    <meta name="description" content="Get behind the wheel of a tank in Hills of Steel! Race and shoot through hilled battlefields, unlock tanks and mechs, use powerful boosters, and conquer the Hills of Steel!" />
+    <meta name="keywords" content="Hills of Steel, tank game, shooter, action, battle, boosters, mechs, robots, free online game, browser game" />
     <!-- Facebook Open Graph -->
-    <meta property="og:title" content="Geometry Game - Play Online Rhythm Platformer" />
-    <meta property="og:description" content="Jump, dash, and fly through rhythm-based levels in Geometry Game. Master obstacles, unlock secrets, and challenge your reflexes!" />
-    <meta property="og:image" content="https://sprunkiunblocked.github.io/datas/images/Geometry-Game.png" />
-    <meta property="og:url" content="https://sprunkiunblocked.github.io/Geometry-Game.html" />
+    <meta property="og:title" content="Hills of Steel: Tank Battle & Action Shooter!" />
+    <meta property="og:description" content="Get behind the wheel of a tank in Hills of Steel! Race and shoot through hilled battlefields, unlock tanks and mechs, use powerful boosters, and conquer the Hills of Steel!" />
+    <meta property="og:image" content="https://sprunkiunblocked.github.io/datas/images/Hills-Of-Stell.jpg" />
+    <meta property="og:url" content="https://kdata1.com/2024/05/hillsofsteel/" />
     <meta property="og:type" content="website" />
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Geometry Game - Play Online Rhythm Platformer" />
-    <meta name="twitter:description" content="Jump, dash, and fly through rhythm-based levels in Geometry Game. Master obstacles, unlock secrets, and challenge your reflexes!" />
-    <meta name="twitter:image" content="https://sprunkiunblocked.github.io/datas/images/Geometry-Game.png" />
+    <meta name="twitter:title" content="Hills of Steel: Tank Battle & Action Shooter!" />
+    <meta name="twitter:description" content="Get behind the wheel of a tank in Hills of Steel! Race and shoot through hilled battlefields, unlock tanks and mechs, use powerful boosters, and conquer the Hills of Steel!" />
+    <meta name="twitter:image" content="https://sprunkiunblocked.github.io/datas/images/Hills-Of-Stell.jpg" />
     <link rel="icon" type="image/png" href="datas/favicon.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <script>
         tailwind.config = {
             theme: {
@@ -34,29 +33,10 @@
         }
     </script>
     <style>
-        .game-container {
-            aspect-ratio: 16/9;
-        }
-        
-        @media (max-width: 768px) {
-            .game-container {
-                aspect-ratio: 4/3;
-            }
-        }
-        
-        .ad-container {
-            min-height: 250px;
-            background-color: #f3f4f6;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 0.5rem;
-        }
-        
-        .game-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
+        .game-container { aspect-ratio: 16/9; }
+        @media (max-width: 768px) { .game-container { aspect-ratio: 4/3; } }
+        .ad-container { min-height: 250px; background-color: #f3f4f6; display: flex; align-items: center; justify-content: center; border-radius: 0.5rem; }
+        .game-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); }
     </style>
 </head>
 <body class="bg-white font-sans text-gray-800">
@@ -64,10 +44,9 @@
     <header class="sticky top-0 z-50 bg-white shadow-sm">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
-                <i class="fas fa-gamepad text-3xl text-primary"></i>
-                <h1 class="text-2xl font-bold text-gray-800">Geometry Game</h1>
+                <i class="fas fa-tank text-3xl text-primary"></i>
+                <h1 class="text-2xl font-bold text-gray-800">Hills of Steel</h1>
             </div>
-            
             <nav class="hidden md:flex space-x-8">
                 <a href="#" class="font-medium hover:text-primary transition">Home</a>
                 <a href="newgame.html" class="font-medium hover:text-primary transition">New Games</a>
@@ -76,14 +55,13 @@
             </nav>
         </div>
     </header>
-
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-8">
         <!-- Game Title and Info -->
         <section class="mb-8">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
                 <div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Geometry Game</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Hills of Steel</h2>
                     <div class="flex items-center space-x-4 text-gray-600">
                         <span class="flex items-center">
                             <i class="fas fa-star text-yellow-400 mr-1"></i> <span id="main-rating"></span>
@@ -93,22 +71,21 @@
                 </div>
             </div>
         </section>
-
         <!-- Game Area and Sidebar -->
         <div class="flex flex-col lg:flex-row gap-8">
             <!-- Main Game Area -->
             <div class="lg:w-2/3">
                 <!-- Game Container -->
                 <div class="game-container bg-gray-100 rounded-xl overflow-hidden mb-6 shadow-md" id="game-area">
-                    <img src="datas/images/Geometry-Game.png" alt="Geometry Game" class="w-full h-full object-cover" id="game-thumbnail">
-                    <button id="play-now-btn" class="absolute left-1/4 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-500 to-green-400 text-white px-10 py-6 rounded-2xl text-3xl font-extrabold shadow-2xl border-4 border-white hover:scale-105 hover:from-blue-600 hover:to-green-500 transition-all duration-300 z-20 flex items-center gap-3 animate-bounce">
-                        <i class="fas fa-play mr-2 text-4xl"></i> Play Geometry Game
-                    </button>
+                    <div class="relative w-full h-full flex items-center justify-center">
+                        <img src="/datas/images/Hills-Of-Stell.jpg" alt="Hills of Steel" class="w-full h-full object-cover" id="game-thumbnail">
+                        <button id="play-now-btn" class="absolute left-1/4 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-500 to-green-400 text-white px-10 py-6 rounded-2xl text-3xl font-extrabold shadow-2xl border-4 border-white hover:scale-105 hover:from-blue-600 hover:to-green-500 transition-all duration-300 z-20 flex items-center gap-3 animate-bounce">
+                            <i class="fas fa-play mr-2 text-4xl"></i> Play Now
+                        </button>
+                    </div>
                 </div>
-                
                 <!-- Game Controls -->
                 <div class="flex flex-wrap gap-3 mb-8">
-                    <!-- Play Now button is now inside game-area -->
                     <div class="flex-1 flex gap-2">
                         <button class="bg-blue-100 py-3 rounded-lg font-medium hover:bg-blue-200 transition w-full" id="fb-share-btn" title="Share on Facebook">
                             <i class="fab fa-facebook-f text-blue-600"></i>
@@ -121,59 +98,42 @@
                         <i class="fas fa-expand mr-2"></i> Fullscreen
                     </button>
                 </div>
-                
                 <!-- Game Description -->
                 <section class="mb-8">
                     <h3 class="text-3xl font-extrabold mb-6 text-primary flex items-center gap-3 animate-pulse">
-                        <i class="fas fa-cube text-2xl text-blue-500"></i>
-                        About Geometry Game
-                        <span class="bg-gradient-to-r from-yellow-400 to-pink-400 text-white px-3 py-1 rounded-full text-base font-bold ml-2 animate-bounce">#Rhythm #Challenge</span>
+                        <i class="fas fa-tank text-2xl text-green-500"></i>
+                        About Hills of Steel
+                        <span class="bg-gradient-to-r from-green-400 to-blue-400 text-white px-3 py-1 rounded-full text-base font-bold ml-2 animate-bounce">#Tank #Shooter</span>
                     </h3>
-                    <div class="bg-gradient-to-br from-blue-50 via-pink-50 to-yellow-50 p-8 rounded-2xl shadow-lg border border-primary/20">
+                    <div class="bg-gradient-to-br from-green-50 via-blue-50 to-yellow-50 p-8 rounded-2xl shadow-lg border border-primary/20">
                         <div class="flex flex-col md:flex-row gap-8 items-center">
                             <div class="flex-1">
-                                <p class="mb-4 text-lg text-gray-800 font-semibold">
-                                    <span class="inline-block bg-blue-200 text-blue-900 px-2 py-1 rounded mr-2 font-bold animate-bounce">Welcome!</span>
-                                    <span class="text-primary font-bold">Geometry Game</span> is a <span class="text-pink-600 font-bold">rhythm-infused platformer</span> that tests your reflexes and focus. Jump, dash, and fly through electrifying levels, all synced to energetic soundtracks. Every move is an extension of the music—<span class="font-bold text-yellow-600">can you keep up?</span>
-                                </p>
-                                <div class="bg-white rounded-xl shadow p-4 mb-4">
-                                    <h4 class="font-bold text-lg text-primary mb-2 flex items-center gap-2"><i class="fas fa-bolt text-yellow-500"></i> Core Gameplay</h4>
-                                    <ul class="space-y-2 text-gray-700">
-                                        <li class="flex items-center"><i class="fas fa-cube text-blue-500 mr-2"></i> Control a cube-shaped character and navigate treacherous levels by jumping and flying.</li>
-                                        <li class="flex items-center"><i class="fas fa-music text-pink-500 mr-2"></i> Sync your actions with the music to anticipate obstacles and power-ups.</li>
-                                        <li class="flex items-center"><i class="fas fa-exclamation-triangle text-red-500 mr-2"></i> Dodge saws, spikes, and gravity portals while collecting secrets and unlocking new icons.</li>
+                                <header>
+                                    <h1 class="text-2xl font-bold mb-2">Hills of Steel</h1>
+                                    <p class="mb-4 text-base text-gray-800">Get behind the wheel of a tank in this action-packed shooter game!</p>
+                                </header>
+                                <section>
+                                    <h2 class="font-bold text-lg mb-2 text-green-700">Game Overview</h2>
+                                    <p class="mb-4 text-base text-gray-800">Hills of Steel puts you in control of a tank as you race and shoot your way through a hilled battlefield filled with enemies. Unlock a variety of tanks, mechs, and robots to use in your fight. Utilize powerful Boosters like mines, force shields, and rocket strikes to make your tank even more formidable. Can you build the ultimate tank and conquer the Hills of Steel?</p>
+                                </section>
+                                <section>
+                                    <h2 class="font-bold text-lg mb-2 text-blue-700">How to Play Hills of Steel</h2>
+                                    <ul class="mb-4 list-disc list-inside text-gray-700">
+                                        <li><strong>Move:</strong> Use the A and D keys or the Arrow keys to drive your tank!</li>
+                                        <li><strong>Shoot:</strong> Press the Spacebar to shoot!</li>
+                                        <li><strong>Repair:</strong> Press the B button to repair your tank!</li>
                                     </ul>
-                                </div>
-                                <div class="bg-white rounded-xl shadow p-4 mb-4">
-                                    <h4 class="font-bold text-lg text-primary mb-2 flex items-center gap-2"><i class="fas fa-lightbulb text-yellow-400"></i> Tips for Mastering</h4>
-                                    <ul class="space-y-2 text-gray-700">
-                                        <li class="flex items-center"><i class="fas fa-headphones text-green-500 mr-2"></i> Listen closely to the soundtrack for cues.</li>
-                                        <li class="flex items-center"><i class="fas fa-sync-alt text-purple-500 mr-2"></i> Practice levels to sharpen your reflexes and memorize patterns.</li>
-                                        <li class="flex items-center"><i class="fas fa-gem text-pink-500 mr-2"></i> Explore hidden paths and collectibles for extra rewards.</li>
-                                    </ul>
-                                </div>
-                                <div class="bg-white rounded-xl shadow p-4">
-                                    <h4 class="font-bold text-lg text-primary mb-2 flex items-center gap-2"><i class="fas fa-gamepad text-blue-500"></i> Controls</h4>
-                                    <ul class="space-y-2 text-gray-700">
-                                        <li class="flex items-center"><i class="fas fa-arrow-up text-blue-500 mr-2"></i> <strong>JUMP:</strong> [Space], [W], [Up], [Ctrl], or mouse click</li>
-                                        <li class="flex items-center"><i class="fas fa-pause text-gray-500 mr-2"></i> <strong>PAUSE:</strong> [P] to pause</li>
-                                        <li class="flex items-center"><i class="fas fa-bolt text-yellow-500 mr-2"></i> <strong>LAG:</strong> [L] to toggle effects</li>
-                                        <li class="flex items-center"><i class="fas fa-flag text-green-500 mr-2"></i> <strong>RESTART:</strong> [Green Flag]</li>
-                                    </ul>
-                                </div>
-                                <p class="mt-4 text-base text-red-600 font-bold animate-pulse">Avoid touching spikes or obstacles—otherwise, you'll have to restart your journey!</p>
+                                </section>
                             </div>
                         </div>
                     </div>
                 </section>
-
                 <!-- Game List Section -->
                 <section class="mb-12">
                     <h3 class="text-3xl font-bold mb-8 text-gray-900 border-b pb-4">More Games You Might Like</h3>
                     <div id="game-list-container" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6"></div>
                 </section>
             </div>
-            
             <!-- Sidebar -->
             <div class="lg:w-1/3 space-y-6">
                 <!-- Ad Space -->
@@ -185,13 +145,11 @@
                         </div>
                     </div>
                 </div>
-                
                 <!-- Similar Games -->
                 <section>
                     <h3 class="text-xl font-bold mb-4 text-gray-900">Similar Games</h3>
                     <div id="similar-games-container" class="space-y-4"></div>
                 </section>
-                
                 <!-- Another Ad Space -->
                 <div class="ad-container">
                     <div class="text-center p-4">
@@ -204,35 +162,23 @@
             </div>
         </div>
     </main>
-
     <!-- Footer -->
     <footer class="bg-gray-50 border-t border-gray-200 mt-12">
         <div class="container mx-auto px-4 py-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
-                        <i class="fas fa-gamepad text-3xl text-primary"></i>
-                        <h3 class="text-xl font-bold">Sprunki Unblocked</h3>
+                        <i class="fas fa-tank text-3xl text-primary"></i>
+                        <h3 class="text-xl font-bold">Hills of Steel</h3>
                     </div>
-                    <p class="text-gray-600 mb-4">
-                        The best free online games you can play directly in your browser. No downloads required!
-                    </p>
+                    <p class="text-gray-600 mb-4">The best free online games you can play directly in your browser. No downloads required!</p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-500 hover:text-primary transition">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="text-gray-500 hover:text-primary transition">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="text-gray-500 hover:text-primary transition">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="text-gray-500 hover:text-primary transition">
-                            <i class="fab fa-youtube"></i>
-                        </a>
+                        <a href="#" class="text-gray-500 hover:text-primary transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-primary transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-primary transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-primary transition"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                
                 <div>
                     <h4 class="font-bold text-lg mb-4">Company</h4>
                     <ul class="space-y-2">
@@ -243,25 +189,17 @@
                         <li><a href="dmca.html" class="text-gray-600 hover:text-primary transition">DMCA</a></li>
                     </ul>
                 </div>
-                
                 <div>
                     <h4 class="font-bold text-lg mb-4">Newsletter</h4>
-                    <p class="text-gray-600 mb-4">
-                        Subscribe to get updates on new games and special offers.
-                    </p>
+                    <p class="text-gray-600 mb-4">Subscribe to get updates on new games and special offers.</p>
                     <form class="flex">
                         <input type="email" placeholder="Your email" class="px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent w-full">
-                        <button type="submit" class="bg-primary text-white px-4 py-2 rounded-r-lg hover:bg-blue-600 transition">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
+                        <button type="submit" class="bg-primary text-white px-4 py-2 rounded-r-lg hover:bg-blue-600 transition"><i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
-            
             <div class="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 mb-4 md:mb-0">
-                    &copy; 2025 SprunkiWebGames. All rights reserved.
-                </p>
+                <p class="text-gray-500 mb-4 md:mb-0">&copy; 2025 SprunkiWebGames. All rights reserved.</p>
                 <div class="flex space-x-6">
                     <a href="#" class="text-gray-500 hover:text-primary transition">Privacy Policy</a>
                     <a href="#" class="text-gray-500 hover:text-primary transition">Terms of Service</a>
@@ -270,7 +208,6 @@
             </div>
         </div>
     </footer>
-
     <script>
         rating = (Math.random() * (5.0 - 4.5) + 4.5).toFixed(1);
         plays = Math.floor(Math.random() * (20000 - 10000 + 1)) + 10000;
@@ -278,7 +215,6 @@
         ratingElement.textContent = rating;
         const playsElement = document.getElementById('main-plays');
         playsElement.textContent = plays;
-
         // Load game data from datas/all-game.json
         let games = [];
         let similarGames = [];
@@ -292,15 +228,10 @@
             fetch('datas/all-game.json')
                 .then(response => response.json())
                 .then(data => {
-                    // Lọc status = 1
                     let filtered = data.filter(game => game.status === 1);
-                    // Sắp xếp theo order tăng dần
                     filtered.sort((a, b) => (a.order || 0) - (b.order || 0));
-                    // Trộn ngẫu nhiên
                     shuffleArray(filtered);
-                    // Lấy 30 game đầu tiên
                     games = filtered.slice(0, 30);
-                    // Lấy 3 game category = 'Hot', status = 1
                     let hotGames = data.filter(game => game.status === 1 && game.category === 'Hot');
                     shuffleArray(hotGames);
                     similarGames = hotGames.slice(0, 3);
@@ -308,13 +239,11 @@
                     generateSimilarGames();
                 });
         }
-
-        // Generate game list items
         function generateGameList() {
             const container = document.getElementById('game-list-container');
             container.innerHTML = '';
             games.forEach(game => {
-                game.rating = (Math.random() * (5.0 - 4.5) + 4.5).toFixed(1); // toFixed(1) rounds to one decimal place
+                game.rating = (Math.random() * (5.0 - 4.5) + 4.5).toFixed(1);
                 game.plays = Math.floor(Math.random() * (20000 - 10000 + 1)) + 10000;
                 const gameItem = document.createElement('div');
                 gameItem.className = 'game-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 border border-gray-100';
@@ -340,8 +269,6 @@
                 container.appendChild(gameItem);
             });
         }
-
-        // Generate similar games
         function generateSimilarGames() {
             const container = document.getElementById('similar-games-container');
             if (!container) return;
@@ -369,8 +296,6 @@
                 container.appendChild(gameItem);
             });
         }
-
-        // Fullscreen functionality
         function toggleFullscreen() {
             const iframe = document.getElementById('game-iframe');
             if (iframe) {
@@ -383,32 +308,21 @@
                 }
             }
         }
-
-        // Play Now functionality
         function loadGame() {
             const gameArea = document.getElementById('game-area');
-            gameArea.innerHTML = `<iframe src="https://games.crazygames.com/en_US/geometry-dash-online/index.html" class="w-full h-full" frameborder="0" allowfullscreen id="game-iframe"></iframe>`;
+            gameArea.innerHTML = `<iframe src="https://kdata1.com/2024/05/hillsofsteel/" class="w-full h-full" frameborder="0" allowfullscreen id="game-iframe"></iframe>`;
         }
-
-        // Mobile menu toggle functionality
         document.addEventListener('DOMContentLoaded', function() {
-            // Load and generate game list
             loadGames();
-            // Setup Play Now button
             document.getElementById('play-now-btn').addEventListener('click', loadGame);
-            // Setup fullscreen button
             document.getElementById('fullscreen-btn').addEventListener('click', toggleFullscreen);
-            const mobileMenuButton = document.querySelector('.md\\:hidden');
-            // You would add click handler here to show mobile menu
-
-            // Share buttons functionality
             const fbShareBtn = document.getElementById('fb-share-btn');
             const twShareBtn = document.getElementById('tw-share-btn');
             const shareUrl = window.location.href;
             const shareTitle = document.title;
             const shareDesc = document.querySelector('meta[name="description"]').getAttribute('content');
             const shareImg = document.querySelector('meta[property="og:image"]').getAttribute('content');
-
+        
             fbShareBtn.addEventListener('click', function() {
                 const quote = `${shareTitle} - ${shareDesc}\n${shareUrl}`;
                 const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}&quote=${encodeURIComponent(quote)}&hashtag=%23SprunkiUnblocked`;
@@ -419,8 +333,6 @@
                 const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}&hashtags=SprunkiUnblocked&via=EpicWebGames`;
                 window.open(url, '_blank', 'width=600,height=400');
             });
-
-            // Game rating stars (example)
             const stars = document.querySelectorAll('.rating-star');
             stars.forEach((star, index) => {
                 star.addEventListener('click', () => {
@@ -435,8 +347,6 @@
                     });
                 });
             });
-
-            // Ad placeholder - in a real implementation you would load Google AdSense here
             console.log('Ad spaces ready for Google AdSense implementation');
         });
     </script>

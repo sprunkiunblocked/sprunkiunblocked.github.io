@@ -412,10 +412,6 @@
             const shareTitle = document.title;
             const shareDesc = document.querySelector('meta[name="description"]').getAttribute('content');
             const shareImg = document.querySelector('meta[property="og:image"]').getAttribute('content');
-            console.log(`Share URL: ${shareUrl}`);
-            console.log(`shareDesc: ${shareDesc}`);
-            console.log(`shareImg: ${shareImg}`);
-            console.log(`shareTitle: ${shareTitle}`);
 
             fbShareBtn.addEventListener('click', function() {
                 const quote = `${shareTitle} - ${shareDesc}\n${shareUrl}`;

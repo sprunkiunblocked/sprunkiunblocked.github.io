@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometry Game - Play Online Rhythm Platformer</title>
-    <meta name="description" content="Play Geometry Game online! Jump, dash, and fly through rhythm-based levels. Master obstacles, unlock secrets, and challenge your reflexes in this iconic platformer." />
-    <meta name="keywords" content="Geometry Game, Geometry Dash, rhythm game, platformer, online game, free game, reflex, music, obstacles, jump, dash" />
+    <title>Subway Surfers: Play Free Online Endless Runner Game</title>
+    <meta name="description" content="Play Subway Surfers online! Dash, dodge, and jump through subway tracks, collect coins, unlock power-ups and characters. Enjoy the classic endless runner game for free in your browser—no downloads needed!" />
+    <meta name="keywords" content="Subway Surfers, endless runner, free game, online game, HTML5, Jake, Tricky, Yutani, Sybo, Poki, power-ups, characters, Halloween, Haunted Hood" />
     <!-- Facebook Open Graph -->
-    <meta property="og:title" content="Geometry Game - Play Online Rhythm Platformer" />
-    <meta property="og:description" content="Jump, dash, and fly through rhythm-based levels in Geometry Game. Master obstacles, unlock secrets, and challenge your reflexes!" />
-    <meta property="og:image" content="https://sprunkiunblocked.github.io/datas/images/Geometry-Game.png" />
-    <meta property="og:url" content="https://sprunkiunblocked.github.io/Geometry-Game.html" />
+    <meta property="og:title" content="Subway Surfers: Play Free Online Endless Runner Game" />
+    <meta property="og:description" content="Play Subway Surfers online! Dash, dodge, and jump through subway tracks, collect coins, unlock power-ups and characters. Enjoy the classic endless runner game for free in your browser—no downloads needed!" />
+    <meta property="og:image" content="https://sprunkiunblocked.github.io/datas/images/Subway-Surfers.jpg" />
+    <meta property="og:url" content="https://sprunkiunblocked.github.io/Subway-Surfers.html" />
     <meta property="og:type" content="website" />
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Geometry Game - Play Online Rhythm Platformer" />
-    <meta name="twitter:description" content="Jump, dash, and fly through rhythm-based levels in Geometry Game. Master obstacles, unlock secrets, and challenge your reflexes!" />
-    <meta name="twitter:image" content="https://sprunkiunblocked.github.io/datas/images/Geometry-Game.png" />
+    <meta name="twitter:title" content="Subway Surfers: Play Free Online Endless Runner Game" />
+    <meta name="twitter:description" content="Play Subway Surfers online! Dash, dodge, and jump through subway tracks, collect coins, unlock power-ups and characters. Enjoy the classic endless runner game for free in your browser—no downloads needed!" />
+    <meta name="twitter:image" content="https://sprunkiunblocked.github.io/datas/images/Subway-Surfers.jpg" />
     <link rel="icon" type="image/png" href="datas/favicon.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -65,7 +65,7 @@
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <i class="fas fa-gamepad text-3xl text-primary"></i>
-                <h1 class="text-2xl font-bold text-gray-800">Geometry Game</h1>
+                <h1 class="text-2xl font-bold text-gray-800">Sprunki Unblocked</h1>
             </div>
             
             <nav class="hidden md:flex space-x-8">
@@ -83,7 +83,7 @@
         <section class="mb-8">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
                 <div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Geometry Game</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Subway Surfers</h2>
                     <div class="flex items-center space-x-4 text-gray-600">
                         <span class="flex items-center">
                             <i class="fas fa-star text-yellow-400 mr-1"></i> <span id="main-rating"></span>
@@ -100,10 +100,12 @@
             <div class="lg:w-2/3">
                 <!-- Game Container -->
                 <div class="game-container bg-gray-100 rounded-xl overflow-hidden mb-6 shadow-md" id="game-area">
-                    <img src="datas/images/Geometry-Game.png" alt="Geometry Game" class="w-full h-full object-cover" id="game-thumbnail">
-                    <button id="play-now-btn" class="absolute left-1/4 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-500 to-green-400 text-white px-10 py-6 rounded-2xl text-3xl font-extrabold shadow-2xl border-4 border-white hover:scale-105 hover:from-blue-600 hover:to-green-500 transition-all duration-300 z-20 flex items-center gap-3 animate-bounce">
-                        <i class="fas fa-play mr-2 text-4xl"></i> Play Geometry Game
-                    </button>
+                    <div class="relative w-full h-full flex items-center justify-center">
+                        <img src="/datas/images/Subway-Surfers.jpg" alt="Subway Surfers" class="w-full h-full object-cover" id="game-thumbnail">
+                        <button id="play-now-btn" class="absolute left-1/4 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-500 to-green-400 text-white px-10 py-6 rounded-2xl text-3xl font-extrabold shadow-2xl border-4 border-white hover:scale-105 hover:from-blue-600 hover:to-green-500 transition-all duration-300 z-20 flex items-center gap-3 animate-bounce">
+                            <i class="fas fa-play mr-2 text-4xl"></i> Play Now
+                        </button>
+                    </div>
                 </div>
                 
                 <!-- Game Controls -->
@@ -125,43 +127,51 @@
                 <!-- Game Description -->
                 <section class="mb-8">
                     <h3 class="text-3xl font-extrabold mb-6 text-primary flex items-center gap-3 animate-pulse">
-                        <i class="fas fa-cube text-2xl text-blue-500"></i>
-                        About Geometry Game
-                        <span class="bg-gradient-to-r from-yellow-400 to-pink-400 text-white px-3 py-1 rounded-full text-base font-bold ml-2 animate-bounce">#Rhythm #Challenge</span>
+                        <i class="fas fa-subway text-2xl text-blue-500"></i>
+                        About Subway Surfers
+                        <span class="bg-gradient-to-r from-yellow-400 to-blue-400 text-white px-3 py-1 rounded-full text-base font-bold ml-2 animate-bounce">#EndlessRunner #Classic</span>
                     </h3>
-                    <div class="bg-gradient-to-br from-blue-50 via-pink-50 to-yellow-50 p-8 rounded-2xl shadow-lg border border-primary/20">
+                    <div class="bg-gradient-to-br from-blue-50 via-green-50 to-yellow-50 p-8 rounded-2xl shadow-lg border border-primary/20">
                         <div class="flex flex-col md:flex-row gap-8 items-center">
                             <div class="flex-1">
-                                <p class="mb-4 text-lg text-gray-800 font-semibold">
-                                    <span class="inline-block bg-blue-200 text-blue-900 px-2 py-1 rounded mr-2 font-bold animate-bounce">Welcome!</span>
-                                    <span class="text-primary font-bold">Geometry Game</span> is a <span class="text-pink-600 font-bold">rhythm-infused platformer</span> that tests your reflexes and focus. Jump, dash, and fly through electrifying levels, all synced to energetic soundtracks. Every move is an extension of the music—<span class="font-bold text-yellow-600">can you keep up?</span>
-                                </p>
-                                <div class="bg-white rounded-xl shadow p-4 mb-4">
-                                    <h4 class="font-bold text-lg text-primary mb-2 flex items-center gap-2"><i class="fas fa-bolt text-yellow-500"></i> Core Gameplay</h4>
-                                    <ul class="space-y-2 text-gray-700">
-                                        <li class="flex items-center"><i class="fas fa-cube text-blue-500 mr-2"></i> Control a cube-shaped character and navigate treacherous levels by jumping and flying.</li>
-                                        <li class="flex items-center"><i class="fas fa-music text-pink-500 mr-2"></i> Sync your actions with the music to anticipate obstacles and power-ups.</li>
-                                        <li class="flex items-center"><i class="fas fa-exclamation-triangle text-red-500 mr-2"></i> Dodge saws, spikes, and gravity portals while collecting secrets and unlocking new icons.</li>
-                                    </ul>
-                                </div>
-                                <div class="bg-white rounded-xl shadow p-4 mb-4">
-                                    <h4 class="font-bold text-lg text-primary mb-2 flex items-center gap-2"><i class="fas fa-lightbulb text-yellow-400"></i> Tips for Mastering</h4>
-                                    <ul class="space-y-2 text-gray-700">
-                                        <li class="flex items-center"><i class="fas fa-headphones text-green-500 mr-2"></i> Listen closely to the soundtrack for cues.</li>
-                                        <li class="flex items-center"><i class="fas fa-sync-alt text-purple-500 mr-2"></i> Practice levels to sharpen your reflexes and memorize patterns.</li>
-                                        <li class="flex items-center"><i class="fas fa-gem text-pink-500 mr-2"></i> Explore hidden paths and collectibles for extra rewards.</li>
-                                    </ul>
-                                </div>
+                                <h2 class="text-2xl font-bold mb-4">Subway Surfers Overview</h2>
+                                <h3 class="text-lg font-bold mb-2">Game Concept</h3>
+                                <p>Subway Surfers is a classic endless runner game where players take on the role of Jake, who is trying to escape from a grumpy Inspector and his dog. Players navigate through subway tracks, dodging trains and obstacles while collecting coins to unlock power-ups and characters.</p>
+                                <h3 class="text-lg font-bold mt-6 mb-2">Platform</h3>
+                                <p>Originally launched in 2012 by Sybo, Subway Surfers is now available as an HTML5 game, allowing play on mobile devices, tablets, and PCs through web browsers, especially on sites like Poki. It's free to play without downloads.</p>
+                                <h3 class="text-lg font-bold mt-6 mb-2">Gameplay Mechanics</h3>
+                                <ul class="list-disc ml-6 mb-4">
+                                    <li><strong>Left/Right Arrow:</strong> Move left/right</li>
+                                    <li><strong>Up Arrow:</strong> Jump</li>
+                                    <li><strong>Down Arrow:</strong> Roll</li>
+                                    <li><strong>Space:</strong> Activate hoverboard</li>
+                                </ul>
+                                <h3 class="text-lg font-bold mt-6 mb-2">Latest World</h3>
+                                <p>Waving goodbyes to all the cute cats in Istanbul, it is once again the time of the year—Halloween! We're heading to the spooky Haunted Hood! As you step through the tunnel dripping with slimy green goo, those slimes are poisonous, so you better keep your distance. The dark forest around you is full of shadows, with glowing houses scattered in the distance. And wait, did you just spot a sheep being abducted by a UFO? Let’s keep that our little secret, and focus on having the best Halloween adventure ever!</p>
+                                <h3 class="text-lg font-bold mt-6 mb-2">Characters in Subway Surfers</h3>
+                                <ul class="list-disc ml-6 mb-4">
+                                    <li><strong>Jake:</strong> The original subway surfer and our main surfer!</li>
+                                    <li><strong>Tricky:</strong> A real perfectionist and the brains of the Surfers!</li>
+                                    <li><strong>Yutani:</strong> A tech genius and science obsessed. She also thinks she's not from this world...</li>
+                                    <li><strong>Lucy:</strong> Our resident punk in the streets, someone has to give the guard a hard time..</li>
+                                    <li><strong>Tagbot:</strong> The first robot in Subway Surfers!</li>
+                                    <li><strong>Ninja:</strong> Every good group needs a martial artist, and we've got a Ninja!</li>
+                                    <li><strong>Tasha:</strong> The fitness guru of the bunch!</li>
+                                    <li><strong>King:</strong> He's the King, need we say more?</li>
+                                    <li><strong>Brody:</strong> The sandal wearing cool cat, everyone wants to be him...</li>
+                                </ul>
+                            </div>
+                            <div class="flex-1 flex flex-col gap-4">
                                 <div class="bg-white rounded-xl shadow p-4">
                                     <h4 class="font-bold text-lg text-primary mb-2 flex items-center gap-2"><i class="fas fa-gamepad text-blue-500"></i> Controls</h4>
                                     <ul class="space-y-2 text-gray-700">
-                                        <li class="flex items-center"><i class="fas fa-arrow-up text-blue-500 mr-2"></i> <strong>JUMP:</strong> [Space], [W], [Up], [Ctrl], or mouse click</li>
-                                        <li class="flex items-center"><i class="fas fa-pause text-gray-500 mr-2"></i> <strong>PAUSE:</strong> [P] to pause</li>
-                                        <li class="flex items-center"><i class="fas fa-bolt text-yellow-500 mr-2"></i> <strong>LAG:</strong> [L] to toggle effects</li>
-                                        <li class="flex items-center"><i class="fas fa-flag text-green-500 mr-2"></i> <strong>RESTART:</strong> [Green Flag]</li>
+                                        <li class="flex items-center"><i class="fas fa-arrow-left mr-2 text-blue-500"></i> Left Arrow: Move left</li>
+                                        <li class="flex items-center"><i class="fas fa-arrow-right mr-2 text-blue-500"></i> Right Arrow: Move right</li>
+                                        <li class="flex items-center"><i class="fas fa-arrow-up mr-2 text-blue-500"></i> Up Arrow: Jump</li>
+                                        <li class="flex items-center"><i class="fas fa-arrow-down mr-2 text-blue-500"></i> Down Arrow: Roll</li>
+                                        <li class="flex items-center"><i class="fas fa-space-shuttle mr-2 text-blue-500"></i> Space: Activate hoverboard</li>
                                     </ul>
                                 </div>
-                                <p class="mt-4 text-base text-red-600 font-bold animate-pulse">Avoid touching spikes or obstacles—otherwise, you'll have to restart your journey!</p>
                             </div>
                         </div>
                     </div>
@@ -387,7 +397,7 @@
         // Play Now functionality
         function loadGame() {
             const gameArea = document.getElementById('game-area');
-            gameArea.innerHTML = `<iframe src="https://games.crazygames.com/en_US/geometry-dash-online/index.html" class="w-full h-full" frameborder="0" allowfullscreen id="game-iframe"></iframe>`;
+            gameArea.innerHTML = `<iframe src="https://subwaysurf.io/subway-surfers.play" class="w-full h-full" frameborder="0" allowfullscreen id="game-iframe"></iframe>`;
         }
 
         // Mobile menu toggle functionality
@@ -408,6 +418,10 @@
             const shareTitle = document.title;
             const shareDesc = document.querySelector('meta[name="description"]').getAttribute('content');
             const shareImg = document.querySelector('meta[property="og:image"]').getAttribute('content');
+            console.log(`Share URL: ${shareUrl}`);
+            console.log(`shareDesc: ${shareDesc}`);
+            console.log(`shareImg: ${shareImg}`);
+            console.log(`shareTitle: ${shareTitle}`);
 
             fbShareBtn.addEventListener('click', function() {
                 const quote = `${shareTitle} - ${shareDesc}\n${shareUrl}`;

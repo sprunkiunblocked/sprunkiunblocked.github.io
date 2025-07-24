@@ -100,10 +100,12 @@
             <div class="lg:w-2/3">
                 <!-- Game Container -->
                 <div class="game-container bg-gray-100 rounded-xl overflow-hidden mb-6 shadow-md" id="game-area">
-                    <img src="/datas/images/Sprunki-Unblocked.jpg" alt="Sprunki Unblocked" class="w-full h-full object-cover" id="game-thumbnail">
-                    <button id="play-now-btn" class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-primary text-white px-6 py-3 rounded-lg text-xl font-bold shadow-lg hover:bg-blue-600 transition z-10">
-                        <i class="fas fa-play mr-2"></i> Play Now
-                    </button>
+                    <div class="relative w-full h-full flex items-center justify-center">
+                        <img src="/datas/images/Sprunki-Unblocked.jpg" alt="Sprunki Unblocked" class="w-full h-full object-cover" id="game-thumbnail">
+                        <button id="play-now-btn" class="absolute left-1/4 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-500 to-green-400 text-white px-10 py-6 rounded-2xl text-3xl font-extrabold shadow-2xl border-4 border-white hover:scale-105 hover:from-blue-600 hover:to-green-500 transition-all duration-300 z-20 flex items-center gap-3 animate-bounce">
+                            <i class="fas fa-play mr-2 text-4xl"></i> Play Now
+                        </button>
+                    </div>
                 </div>
                 
                 <!-- Game Controls -->
@@ -124,46 +126,45 @@
                 
                 <!-- Game Description -->
                 <section class="mb-8">
-                    <h3 class="text-2xl font-bold mb-4 text-gray-900">About Sprunki Unblocked</h3>
-                    <div class="bg-gray-50 p-6 rounded-xl">
-                        <p class="mb-4 text-gray-700">
-                            Hey music makers! Have you ever wanted to be a **DJ** and create your very own cool songs? Well, now you can with **Sprunki Unblocked**! It's a super fun music game where you get to step into a DJ booth and mix all sorts of sounds – from **beats and melodies to vocals and even silly sound effects!**
-                        </p>
-                        <p class="mb-4 text-gray-700">
-                            At first, everything is bright and cheerful, with happy tunes and funny pictures. But as you keep playing, get ready for a little **adventure!** The game gets a bit darker and more mysterious, with some **spooky sounds and surprising twists!** Don't worry, it's all part of the fun! Want to know how to unlock those darker, cooler themes? Try putting on the **black hat!** This will change the music and pictures into something totally unexpected. Just be ready for a few **"boo!" moments** – they're like little jump scares that add to the excitement!
-                        </p>
-                        <p class="mb-4 text-gray-700">
-                            You can play Sprunki Unblocked anytime, anywhere – whether you're at school, at home, or anywhere you have internet! **No downloads needed!** Just open your web browser and start creating.
-                        </p>
-                        <div class="grid grid-cols-2 gap-4 mt-4">
-                            <div>
-                                <h4 class="font-semibold text-gray-800 mb-2">How to Play & Features:</h4>
-                                <ul class="space-y-2 text-gray-700">
-                                    <li class="flex items-center">
-                                        <i class="fas fa-music text-green-500 mr-2"></i> Mix beats, melodies, vocals & sound effects.
-                                    </li>
-                                    <li class="flex items-center">
-                                        <i class="fas fa-tshirt text-green-500 mr-2"></i> Drag & drop outfits/accessories to characters.
-                                    </li>
-                                    <li class="flex items-center">
-                                        <i class="fas fa-headphones text-green-500 mr-2"></i> Hover & click headphone button to isolate sounds.
-                                    </li>
-                                    <li class="flex items-center">
-                                        <i class="fas fa-hat-wizard text-green-500 mr-2"></i> Unlock darker themes with the black hat.
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-800 mb-2">Controls:</h4>
-                                <ul class="space-y-2 text-gray-700">
-                                    <li class="flex items-center">
-                                        <i class="fas fa-hand-pointer mr-2 text-blue-500"></i> Drag and drop accessories to play.
-                                    </li>
-                                </ul>
-                                <h4 class="font-semibold text-gray-800 mb-2 mt-4">About Sprunki's Origin:</h4>
-                                <p class="text-gray-700">
-                                    Sprunki builds on the foundation of Incredibox, a critically acclaimed music creation game. Sprunki started as a special mod and grew so popular it got its own game, adding a surreal and darker twist to the original upbeat tone.
+                    <h3 class="text-3xl font-extrabold mb-6 text-primary flex items-center gap-3 animate-pulse">
+                        <i class="fas fa-headphones-alt text-2xl text-green-500"></i>
+                        About Sprunki Unblocked
+                        <span class="bg-gradient-to-r from-pink-400 to-blue-400 text-white px-3 py-1 rounded-full text-base font-bold ml-2 animate-bounce">#Music #Adventure</span>
+                    </h3>
+                    <div class="bg-gradient-to-br from-blue-50 via-green-50 to-yellow-50 p-8 rounded-2xl shadow-lg border border-primary/20">
+                        <div class="flex flex-col md:flex-row gap-8 items-center">
+                            <div class="flex-1">
+                                <p class="mb-4 text-lg text-gray-800 font-semibold">
+                                    <span class="inline-block bg-yellow-200 text-yellow-900 px-2 py-1 rounded mr-2 font-bold animate-bounce">Hey music makers!</span>
+                                    Ever wanted to be a <span class="text-primary font-bold">DJ</span> and create your own cool songs? <span class="text-green-600 font-bold">Sprunki Unblocked</span> lets you step into a DJ booth and mix beats, melodies, vocals, and even silly sound effects!
                                 </p>
+                                <p class="mb-4 text-base text-gray-700">
+                                    <span class="font-bold text-pink-600">Start bright and cheerful</span> with happy tunes and funny pictures. As you play, <span class="font-bold text-purple-600">adventure awaits!</span> The game gets darker and more mysterious, with <span class="font-bold text-red-600">spooky sounds</span> and surprising twists. Want to unlock those cool, dark themes? Put on the <span class="bg-black text-white px-2 py-1 rounded">black hat</span> for a totally unexpected experience—watch out for <span class="font-bold text-red-500">"boo!" moments</span>!
+                                </p>
+                                <p class="mb-4 text-base text-gray-700">
+                                    <span class="font-bold text-blue-600">Play anytime, anywhere</span>—at school, home, or anywhere with internet. <span class="bg-green-100 text-green-800 px-2 py-1 rounded">No downloads needed!</span> Just open your browser and start creating.
+                                </p>
+                            </div>
+                            <div class="flex-1 flex flex-col gap-4">
+                                <div class="bg-white rounded-xl shadow p-4">
+                                    <h4 class="font-bold text-lg text-primary mb-2 flex items-center gap-2"><i class="fas fa-music text-green-500"></i> How to Play & Features</h4>
+                                    <ul class="space-y-2 text-gray-700">
+                                        <li class="flex items-center"><i class="fas fa-music text-green-500 mr-2"></i> Mix beats, melodies, vocals & sound effects.</li>
+                                        <li class="flex items-center"><i class="fas fa-tshirt text-green-500 mr-2"></i> Drag & drop outfits/accessories to characters.</li>
+                                        <li class="flex items-center"><i class="fas fa-headphones text-green-500 mr-2"></i> Hover & click headphone button to isolate sounds.</li>
+                                        <li class="flex items-center"><i class="fas fa-hat-wizard text-green-500 mr-2"></i> Unlock darker themes with the black hat.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-white rounded-xl shadow p-4">
+                                    <h4 class="font-bold text-lg text-primary mb-2 flex items-center gap-2"><i class="fas fa-gamepad text-blue-500"></i> Controls</h4>
+                                    <ul class="space-y-2 text-gray-700">
+                                        <li class="flex items-center"><i class="fas fa-hand-pointer mr-2 text-blue-500"></i> Drag and drop accessories to play.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-white rounded-xl shadow p-4">
+                                    <h4 class="font-bold text-lg text-primary mb-2 flex items-center gap-2"><i class="fas fa-info-circle text-purple-500"></i> About Sprunki's Origin</h4>
+                                    <p class="text-gray-700">Sprunki builds on the foundation of Incredibox, a critically acclaimed music creation game. Sprunki started as a special mod and grew so popular it got its own game, adding a surreal and darker twist to the original upbeat tone.</p>
+                                </div>
                             </div>
                         </div>
                     </div>

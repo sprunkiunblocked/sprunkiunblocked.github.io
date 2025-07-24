@@ -101,8 +101,8 @@
                 <!-- Game Container -->
                 <div class="game-container bg-gray-100 rounded-xl overflow-hidden mb-6 shadow-md" id="game-area">
                     <img src="datas/images/Geometry-Game.png" alt="Geometry Game" class="w-full h-full object-cover" id="game-thumbnail">
-                    <button id="play-now-btn" class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-primary text-white px-6 py-3 rounded-lg text-xl font-bold shadow-lg hover:bg-blue-600 transition z-10">
-                        <i class="fas fa-play mr-2"></i> Play Geometry Game
+                    <button id="play-now-btn" class="absolute left-1/4 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-500 to-green-400 text-white px-10 py-6 rounded-2xl text-3xl font-extrabold shadow-2xl border-4 border-white hover:scale-105 hover:from-blue-600 hover:to-green-500 transition-all duration-300 z-20 flex items-center gap-3 animate-bounce">
+                        <i class="fas fa-play mr-2 text-4xl"></i> Play Geometry Game
                     </button>
                 </div>
                 
@@ -124,31 +124,46 @@
                 
                 <!-- Game Description -->
                 <section class="mb-8">
-                    <h3 class="text-2xl font-bold mb-4 text-gray-900">About Geometry Game</h3>
-                    <div class="bg-gray-50 p-6 rounded-xl">
-                        <p class="mb-4 text-gray-700">
-                            Welcome to the geometric gauntlet! Geometry Game (Geometry Dash) is a rhythm-infused platformer that demands lightning-fast reflexes and unwavering focus. Jump, dash, and fly through electrifying levels, all synced to energetic soundtracks. Every move becomes an extension of the music, creating a captivating blend of challenge and rhythm.
-                        </p>
-                        <h4 class="font-semibold text-gray-800 mb-2">Core Gameplay: Jump, Dash, Rhythm</h4>
-                        <ul class="space-y-2 text-gray-700 mb-4">
-                            <li>Control a cube-shaped character and navigate treacherous levels by jumping and flying.</li>
-                            <li>Sync your actions with the music to anticipate obstacles and power-ups.</li>
-                            <li>Dodge saws, spikes, and gravity portals while collecting secrets and unlocking new icons.</li>
-                        </ul>
-                        <h4 class="font-semibold text-gray-800 mb-2">Tips for Mastering Geometry Game:</h4>
-                        <ul class="space-y-2 text-gray-700 mb-4">
-                            <li>Listen closely to the soundtrack for cues.</li>
-                            <li>Practice levels to sharpen your reflexes and memorize patterns.</li>
-                            <li>Explore hidden paths and collectibles for extra rewards.</li>
-                        </ul>
-                        <h4 class="font-semibold text-gray-800 mb-2">Controls:</h4>
-                        <ul class="space-y-2 text-gray-700 mb-4">
-                            <li><strong>JUMP:</strong> [Space], [W], [Up], [Ctrl], or mouse click</li>
-                            <li><strong>PAUSE:</strong> [P] to pause</li>
-                            <li><strong>LAG:</strong> [L] to toggle effects</li>
-                            <li><strong>RESTART:</strong> [Green Flag]</li>
-                        </ul>
-                        <p class="text-gray-700">Avoid touching spikes or obstacles—otherwise, you'll have to restart your journey!</p>
+                    <h3 class="text-3xl font-extrabold mb-6 text-primary flex items-center gap-3 animate-pulse">
+                        <i class="fas fa-cube text-2xl text-blue-500"></i>
+                        About Geometry Game
+                        <span class="bg-gradient-to-r from-yellow-400 to-pink-400 text-white px-3 py-1 rounded-full text-base font-bold ml-2 animate-bounce">#Rhythm #Challenge</span>
+                    </h3>
+                    <div class="bg-gradient-to-br from-blue-50 via-pink-50 to-yellow-50 p-8 rounded-2xl shadow-lg border border-primary/20">
+                        <div class="flex flex-col md:flex-row gap-8 items-center">
+                            <div class="flex-1">
+                                <p class="mb-4 text-lg text-gray-800 font-semibold">
+                                    <span class="inline-block bg-blue-200 text-blue-900 px-2 py-1 rounded mr-2 font-bold animate-bounce">Welcome!</span>
+                                    <span class="text-primary font-bold">Geometry Game</span> is a <span class="text-pink-600 font-bold">rhythm-infused platformer</span> that tests your reflexes and focus. Jump, dash, and fly through electrifying levels, all synced to energetic soundtracks. Every move is an extension of the music—<span class="font-bold text-yellow-600">can you keep up?</span>
+                                </p>
+                                <div class="bg-white rounded-xl shadow p-4 mb-4">
+                                    <h4 class="font-bold text-lg text-primary mb-2 flex items-center gap-2"><i class="fas fa-bolt text-yellow-500"></i> Core Gameplay</h4>
+                                    <ul class="space-y-2 text-gray-700">
+                                        <li class="flex items-center"><i class="fas fa-cube text-blue-500 mr-2"></i> Control a cube-shaped character and navigate treacherous levels by jumping and flying.</li>
+                                        <li class="flex items-center"><i class="fas fa-music text-pink-500 mr-2"></i> Sync your actions with the music to anticipate obstacles and power-ups.</li>
+                                        <li class="flex items-center"><i class="fas fa-exclamation-triangle text-red-500 mr-2"></i> Dodge saws, spikes, and gravity portals while collecting secrets and unlocking new icons.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-white rounded-xl shadow p-4 mb-4">
+                                    <h4 class="font-bold text-lg text-primary mb-2 flex items-center gap-2"><i class="fas fa-lightbulb text-yellow-400"></i> Tips for Mastering</h4>
+                                    <ul class="space-y-2 text-gray-700">
+                                        <li class="flex items-center"><i class="fas fa-headphones text-green-500 mr-2"></i> Listen closely to the soundtrack for cues.</li>
+                                        <li class="flex items-center"><i class="fas fa-sync-alt text-purple-500 mr-2"></i> Practice levels to sharpen your reflexes and memorize patterns.</li>
+                                        <li class="flex items-center"><i class="fas fa-gem text-pink-500 mr-2"></i> Explore hidden paths and collectibles for extra rewards.</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-white rounded-xl shadow p-4">
+                                    <h4 class="font-bold text-lg text-primary mb-2 flex items-center gap-2"><i class="fas fa-gamepad text-blue-500"></i> Controls</h4>
+                                    <ul class="space-y-2 text-gray-700">
+                                        <li class="flex items-center"><i class="fas fa-arrow-up text-blue-500 mr-2"></i> <strong>JUMP:</strong> [Space], [W], [Up], [Ctrl], or mouse click</li>
+                                        <li class="flex items-center"><i class="fas fa-pause text-gray-500 mr-2"></i> <strong>PAUSE:</strong> [P] to pause</li>
+                                        <li class="flex items-center"><i class="fas fa-bolt text-yellow-500 mr-2"></i> <strong>LAG:</strong> [L] to toggle effects</li>
+                                        <li class="flex items-center"><i class="fas fa-flag text-green-500 mr-2"></i> <strong>RESTART:</strong> [Green Flag]</li>
+                                    </ul>
+                                </div>
+                                <p class="mt-4 text-base text-red-600 font-bold animate-pulse">Avoid touching spikes or obstacles—otherwise, you'll have to restart your journey!</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
